@@ -1,0 +1,1180 @@
+/*==================================================
+            SUBSCRIPTION PAGE
+==================================================*/
+
+/*==================================================
+                MAIN PAGE
+==================================================*/
+
+.subscription-setup {
+    padding: 0 0 90px;
+    background: #2E5A3D;
+    color: #FFFFFF;
+}
+
+
+/*==================================================
+                TITLE / HERO
+==================================================*/
+
+.subscription-heading {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 25px;
+    padding: 45px 20px 40px;
+    background: #2E5A3D;
+    color: #FFFFFF;
+}
+
+.subscription-heading h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    line-height: 1.1;
+    margin: 10px 0 12px;
+}
+
+.subscription-heading > p:last-child {
+    max-width: 750px;
+    margin: 0 auto;
+    color: rgba(255,255,255,.9);
+    font-size: .95rem;
+    line-height: 1.5;
+}
+
+/*==================================================
+                SHARED BOX HEADING
+==================================================*/
+
+.box-heading {
+    margin-bottom: 28px;
+}
+
+.box-heading h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    color: #2E5A3D;
+    margin-bottom: 8px;
+}
+
+.box-heading p {
+    color: #667A6E;
+    font-size: .95rem;
+    line-height: 1.6;
+}
+
+
+/*==================================================
+                DELIVERY FREQUENCY
+==================================================*/
+
+.subscription-box {
+    background: #FFFFFF;
+    padding: 25px 30px;
+    border-radius: 24px;
+    box-shadow: 0 8px 25px rgba(0,0,0,.08);
+    margin-bottom: 30px;
+}
+
+
+/* Frequency cards */
+
+.frequency-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.frequency-card {
+    position: relative;
+    padding: 28px 22px;
+    text-align: center;
+
+    border: 2px solid #DDE8D8;
+    border-radius: 22px;
+
+    background: #FFFFFF;
+
+    color: #2E5A3D;
+
+    cursor: pointer;
+
+    transition: .25s ease;
+}
+
+.frequency-card:hover {
+    border-color: #2E5A3D;
+    transform: translateY(-3px);
+}
+
+.frequency-card.active {
+    background: #F5FAF2;
+    border-color: #2E5A3D;
+}
+
+.frequency-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.frequency-card h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    color: #2E5A3D;
+    margin-bottom: 7px;
+}
+
+.frequency-card p {
+    color: #718171;
+    font-size: .85rem;
+    margin: 0;
+}
+
+.frequency-card .selected {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #2E5A3D;
+    color: #FFFFFF;
+
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.recommended {
+    display: inline-block;
+
+    margin-top: 12px;
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    background: #EAF4E3;
+    color: #355E3B;
+
+    font-size: .68rem;
+    font-weight: 700;
+}
+
+
+/*==================================================
+                YOUR CRATE SECTION
+==================================================*/
+
+.subscription-crate-section {
+    margin-bottom: 60px;
+    color: #FFFFFF;
+}
+
+
+/* Heading outside white box */
+
+.subscription-crate-section > .box-heading h2 {
+    color: #FFFFFF;
+}
+
+.subscription-crate-section > .box-heading p {
+    color: rgba(255,255,255,.88);
+}
+
+
+/* Layout */
+
+.subscription-crate-layout {
+    display: grid;
+    grid-template-columns: 1.5fr .8fr;
+    gap: 30px;
+    align-items: start;
+}
+
+
+/*==================================================
+                PRODUCTS BOX
+==================================================*/
+
+.subscription-products {
+    background: #FFFFFF;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,.10);
+}
+
+.subscription-product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 20px 24px;
+
+    border-bottom: 1px solid #EDF1EA;
+
+    background: #FFFFFF;
+}
+
+.subscription-product:last-child {
+    border-bottom: none;
+}
+
+
+/* Left side */
+
+.subscription-product-left {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    min-width: 0;
+}
+
+.subscription-product-left img {
+    width: 65px;
+    height: 65px;
+
+    flex-shrink: 0;
+
+    object-fit: cover;
+
+    border-radius: 13px;
+
+    background: #F5F7F1;
+}
+
+.subscription-product-left h3 {
+    color: #2E5A3D;
+    font-size: 1rem;
+
+    margin-bottom: 4px;
+}
+
+.subscription-product-left p {
+    color: #718171;
+    font-size: .78rem;
+    margin: 0;
+}
+
+
+/* Right side */
+
+.subscription-product-right {
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+
+    flex-shrink: 0;
+}
+
+.subscription-product-right span {
+    color: #718171;
+    font-size: .85rem;
+}
+
+.subscription-product-right strong {
+    color: #2E5A3D;
+    font-size: .95rem;
+}
+
+
+/*==================================================
+                EMPTY CRATE
+==================================================*/
+
+.empty-subscription-crate {
+    padding: 55px 30px;
+
+    text-align: center;
+
+    background: #FFFFFF;
+}
+
+.empty-subscription-crate .empty-icon {
+    font-size: 3rem;
+    margin-bottom: 12px;
+}
+
+.empty-subscription-crate h3 {
+    color: #2E5A3D;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 8px;
+}
+
+.empty-subscription-crate p {
+    color: #718171;
+    font-size: .85rem;
+    margin-bottom: 20px;
+}
+
+
+/*==================================================
+                SUMMARY BOX
+==================================================*/
+
+.subscription-summary {
+    background: #FFFFFF;
+
+    padding: 28px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.10);
+}
+
+.subscription-summary h3 {
+    font-family: "Playfair Display", serif;
+
+    color: #2E5A3D;
+
+    font-size: 1.4rem;
+
+    margin-bottom: 24px;
+}
+
+
+/* Rows */
+
+.subscription-summary-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 15px;
+
+    color: #718171;
+
+    font-size: .9rem;
+}
+
+.subscription-summary-row strong {
+    color: #2E5A3D;
+    font-weight: 700;
+}
+
+
+/* Discount */
+
+.subscription-summary-row.discount-row strong {
+    color: #C68A00;
+}
+
+
+/* Divider */
+
+.subscription-summary hr {
+    border: none;
+
+    height: 1px;
+
+    background: #E1E9DE;
+
+    margin: 22px 0;
+}
+
+
+/* Final price */
+
+.subscription-summary-row.final-price {
+    color: #2E5A3D;
+    font-size: 1.05rem;
+}
+
+.subscription-summary-row.final-price strong {
+    color: #2E5A3D;
+    font-size: 1.45rem;
+}
+
+
+/* Saving */
+
+.subscription-saving {
+    margin: 20px 0;
+
+    padding: 12px;
+
+    border-radius: 13px;
+
+    background: #F1F7EE;
+
+    color: #355E3B;
+
+    text-align: center;
+
+    font-size: .78rem;
+}
+
+
+/* Confirm */
+
+.subscription-confirm {
+    width: 100%;
+    margin-top: 5px;
+}
+
+
+/* Edit crate */
+
+.edit-crate-link {
+    display: block;
+
+    margin-top: 15px;
+
+    text-align: center;
+
+    color: #456A48;
+
+    font-size: .8rem;
+
+    text-decoration: none;
+
+    transition: .2s ease;
+}
+
+.edit-crate-link:hover {
+    color: #2E5A3D;
+}
+
+
+/*==================================================
+                BENEFITS
+==================================================*/
+
+.subscription-benefits {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+
+    margin-top: 10px;
+}
+
+.benefit-card {
+    padding: 22px 15px;
+
+    background: #FFFFFF;
+
+    border: 1px solid #E1E9DE;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 22px rgba(0,0,0,.06);
+
+    transition: .25s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-3px);
+}
+
+.benefit-icon {
+    font-size: 1.7rem;
+
+    margin-bottom: 8px;
+}
+
+.benefit-card h3 {
+    color: #2E5A3D;
+
+    font-size: .95rem;
+
+    margin-bottom: 6px;
+}
+
+.benefit-card p {
+    color: #718171;
+
+    font-size: .72rem;
+
+    line-height: 1.5;
+
+    margin: 0;
+}
+
+
+/*==================================================
+                BUTTON
+==================================================*/
+
+.subscription-setup .btn-primary {
+    display: inline-block;
+
+    border: none;
+
+    border-radius: 50px;
+
+    text-align: center;
+
+    cursor: pointer;
+}
+
+
+/*==================================================
+                NEWSLETTER
+==================================================*/
+
+.newsletter {
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 110px 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2E5A3D,
+            #406A4A
+        );
+
+    color: #FFFFFF;
+
+    text-align: center;
+}
+
+
+/* Decorative circles */
+
+.newsletter::before {
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    top: -130px;
+    left: -100px;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,.06);
+}
+
+.newsletter::after {
+    content: "";
+
+    position: absolute;
+
+    width: 230px;
+    height: 230px;
+
+    right: -80px;
+    bottom: -100px;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,.05);
+}
+
+
+/* Newsletter content */
+
+.newsletter .container {
+    position: relative;
+
+    z-index: 2;
+}
+
+.newsletter h2 {
+    margin-bottom: 15px;
+
+    color: #FFFFFF;
+
+    font-size: 2.8rem;
+
+    line-height: 1.2;
+
+    white-space: nowrap;
+}
+
+.newsletter p {
+    max-width: 650px;
+
+    margin: 0 auto 35px;
+
+    color: rgba(255,255,255,.85);
+
+    font-size: 1rem;
+
+    line-height: 1.7;
+}
+
+.newsletter-form {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.newsletter-form input {
+    width: 420px;
+
+    max-width: 100%;
+
+    margin: 0;
+
+    padding: 15px 22px;
+
+    border: none;
+
+    border-radius: 50px;
+
+    outline: none;
+}
+
+.newsletter-form button {
+    padding: 15px 30px;
+
+    border: none;
+
+    border-radius: 50px;
+
+    background: #F2C14E;
+
+    color: #2E5A3D;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.newsletter-form button:hover {
+    transform: translateY(-3px);
+
+    background: #FFD66B;
+}
+
+
+/*==================================================
+                    MOBILE
+==================================================*/
+
+@media (max-width: 768px) {
+
+    /* Main */
+
+    .subscription-setup {
+        padding: 0 0 55px;
+    }
+
+
+    /* Title */
+
+    .subscription-heading {
+        margin-bottom: 40px;
+
+        padding: 60px 18px;
+    }
+
+    .subscription-heading h1 {
+        font-size: 2.4rem;
+
+        line-height: 1.1;
+    }
+
+    .subscription-heading > p:last-child {
+        font-size: .82rem;
+
+        line-height: 1.6;
+    }
+
+
+    /* Frequency box */
+
+    .subscription-box {
+        padding: 20px;
+
+        border-radius: 22px;
+
+        margin-bottom: 40px;
+    }
+
+    .box-heading h2 {
+        font-size: 1.5rem;
+    }
+
+    .box-heading p {
+        font-size: .78rem;
+
+        line-height: 1.5;
+    }
+
+
+    /* Frequency cards */
+
+    .frequency-grid {
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+    }
+
+    .frequency-card {
+        padding: 18px;
+
+        text-align: left;
+
+        display: grid;
+
+        grid-template-columns: 45px 1fr;
+
+        column-gap: 12px;
+
+        align-items: center;
+    }
+
+    .frequency-icon {
+        grid-row: span 2;
+
+        margin: 0;
+
+        text-align: center;
+    }
+
+    .frequency-card h3 {
+        font-size: 1.1rem;
+
+        margin: 0 0 3px;
+    }
+
+    .frequency-card p {
+        margin: 0;
+    }
+
+    .frequency-card .selected {
+        top: 11px;
+        right: 11px;
+    }
+
+    .recommended {
+        grid-column: 2;
+
+        width: fit-content;
+
+        margin-top: 5px;
+    }
+
+
+    /* Crate */
+
+    .subscription-crate-section {
+        margin-bottom: 40px;
+    }
+
+    .subscription-crate-layout {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+
+    /* Products */
+
+    .subscription-product {
+        padding: 14px;
+
+        gap: 10px;
+    }
+
+    .subscription-product-left {
+        gap: 10px;
+    }
+
+    .subscription-product-left img {
+        width: 52px;
+        height: 52px;
+    }
+
+    .subscription-product-left h3 {
+        font-size: .85rem;
+    }
+
+    .subscription-product-left p {
+        font-size: .7rem;
+    }
+
+    .subscription-product-right {
+        gap: 8px;
+
+        flex-direction: column;
+
+        align-items: flex-end;
+    }
+
+    .subscription-product-right span {
+        font-size: .72rem;
+    }
+
+    .subscription-product-right strong {
+        font-size: .8rem;
+    }
+
+
+    /* Summary */
+
+    .subscription-summary {
+        padding: 20px;
+
+        border-radius: 20px;
+    }
+
+    .subscription-summary h3 {
+        font-size: 1.2rem;
+    }
+
+    .subscription-summary-row {
+        font-size: .8rem;
+    }
+
+    .subscription-summary-row.final-price strong {
+        font-size: 1.2rem;
+    }
+
+
+    /* Benefits */
+
+    .subscription-benefits {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 10px;
+    }
+
+    .benefit-card {
+        padding: 18px 10px;
+    }
+
+    .benefit-card h3 {
+        font-size: .85rem;
+    }
+
+    .benefit-card p {
+        font-size: .68rem;
+    }
+
+
+    /* Newsletter */
+
+    .newsletter {
+        padding: 60px 0;
+    }
+
+    .newsletter h2 {
+        font-size: 1.7rem;
+
+        line-height: 1.2;
+
+        white-space: normal;
+    }
+
+    .newsletter p {
+        margin-bottom: 25px;
+
+        font-size: .82rem;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
+    .newsletter-form input,
+    .newsletter-form button {
+        width: 100%;
+
+        max-width: 100%;
+
+        padding: 12px 18px;
+
+        font-size: .82rem;
+    }
+
+}
+
+
+/*==================================================
+                VERY SMALL PHONES
+==================================================*/
+
+@media (max-width: 420px) {
+
+    .subscription-heading h1 {
+        font-size: 2rem;
+    }
+
+    .subscription-box {
+        padding: 16px;
+    }
+
+    .subscription-product {
+        padding: 12px;
+    }
+
+    .subscription-product-left img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .subscription-summary {
+        padding: 17px;
+    }
+
+    .benefit-card {
+        padding: 15px 8px;
+    }
+
+}
+
+
+/* =====================================================
+        SUBSCRIPTION SUCCESS POPUP
+===================================================== */
+
+.subscription-success-overlay {
+    position: fixed;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    background: rgba(35, 64, 44, .38);
+
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+
+    z-index: 10001;
+}
+
+
+/* SUCCESS CARD */
+
+.subscription-success-modal {
+    width: min(100%, 430px);
+
+    padding: 35px 30px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #f0f9ed,
+        #fffdf4
+    );
+
+    border: 3px solid #78a96b;
+    border-radius: 25px;
+
+    box-shadow:
+        0 20px 60px
+        rgba(44, 91, 54, .30);
+
+    animation: subscriptionSuccessPop .35s ease;
+}
+
+
+@keyframes subscriptionSuccessPop {
+
+    from {
+        opacity: 0;
+        transform: scale(.88) translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+
+}
+
+
+/* CHECK */
+
+.subscription-success-modal .success-check {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 18px;
+}
+
+
+.subscription-success-modal .check-circle {
+    width: 75px;
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #dff0d8;
+
+    border-radius: 50%;
+}
+
+
+.subscription-success-modal .check-circle span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 58px;
+    height: 58px;
+
+    background: #4f8f53;
+
+    border-radius: 50%;
+
+    color: #ffffff;
+
+    font-size: 34px;
+    font-weight: 700;
+
+    animation: checkPop .45s ease .15s both;
+}
+
+
+@keyframes checkPop {
+
+    from {
+        opacity: 0;
+        transform: scale(.4);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+
+/* HEADING */
+
+.subscription-success-modal h2 {
+    margin: 0 0 12px;
+
+    color: #315f3d;
+
+    font-size: 25px;
+    line-height: 1.3;
+}
+
+
+/* MESSAGE */
+
+.subscription-success-modal p {
+    max-width: 350px;
+
+    margin: 0 auto 24px;
+
+    color: #687968;
+
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* BUTTON */
+
+.subscription-success-modal button {
+    border: none;
+
+    padding: 12px 28px;
+
+    border-radius: 50px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #397047,
+            #6b9e5d
+        );
+
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 6px 15px
+        rgba(57, 112, 71, .25);
+
+    transition: .2s ease;
+}
+
+
+.subscription-success-modal button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 18px
+        rgba(57, 112, 71, .30);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .subscription-success-modal {
+        width: 100%;
+        max-width: 350px;
+
+        padding: 32px 24px;
+
+        border-radius: 25px;
+    }
+
+    .subscription-success-modal h2 {
+        font-size: 23px;
+    }
+
+}
+
+
+#subscriptionCrateList {
+    max-height: 500px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#subscriptionCrateList::-webkit-scrollbar {
+    width: 8px;
+}
+
+#subscriptionCrateList::-webkit-scrollbar-track {
+    background: #f1f5ef;
+    border-radius: 10px;
+}
+
+#subscriptionCrateList::-webkit-scrollbar-thumb {
+    background: #9bb59a;
+    border-radius: 10px;
+}

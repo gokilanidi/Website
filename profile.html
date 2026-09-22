@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>My Profile | Sage & Soil</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="css/global.css">
+
+    <link rel="stylesheet"
+          href="css/auth.css">
+
+</head>
+
+
+<body class="profile-page">
+
+
+<!-- HEADER -->
+
+<header>
+
+    <nav class="navbar container">
+
+        <a href="index.html"
+           class="logo">
+
+            <img src="images/icons/logo.png"
+                 alt="Sage & Soil Logo">
+
+            <h2>Sage & Soil</h2>
+
+        </a>
+
+
+        <a href="index.html"
+           class="back-home">
+
+            Home
+
+        </a>
+
+    </nav>
+
+</header>
+
+
+<!-- PROFILE -->
+
+<main class="profile-main">
+
+    <div class="container">
+
+
+        <div class="profile-header">
+
+            <div class="profile-avatar">
+                👤
+            </div>
+
+            <div>
+
+                <p class="section-tag">
+                    MY ACCOUNT
+                </p>
+
+                <h1>
+                    My Profile
+                </h1>
+
+                <p>
+                    Manage your personal information
+                    and delivery details.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="profile-layout">
+
+
+            <!-- PERSONAL INFORMATION -->
+
+            <section class="profile-card">
+
+                <div class="profile-card-heading">
+
+                    <div>
+
+                        <h2>
+                            Personal Information
+                        </h2>
+
+                        <p>
+                            Keep your details up to date.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <form id="profileForm">
+
+
+                    <div class="name-row">
+
+                        <div class="form-group">
+
+                            <label for="profileFirstName">
+                                First Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="profileFirstName"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="profileLastName">
+                                Last Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="profileLastName"
+                                required>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="profileEmail">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="profileEmail"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="profilePhone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="profilePhone">
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="profileAddress">
+                            Delivery Address
+                        </label>
+
+                        <textarea
+                            id="profileAddress"
+                            rows="4"
+                            placeholder="Enter your delivery address">
+                        </textarea>
+
+                    </div>
+
+
+                    <p
+                        id="profileMessage"
+                        class="profile-message">
+                    </p>
+
+
+                    <button
+                        type="submit"
+                        class="auth-submit">
+
+                        Save Changes
+
+                    </button>
+
+
+                </form>
+
+            </section>
+
+
+
+            <!-- ACCOUNT OPTIONS -->
+
+            <aside class="profile-sidebar">
+
+
+                <div class="profile-side-card">
+
+                    <h3>
+                        My Crate
+                    </h3>
+
+                    <p>
+                        View and manage the fresh produce
+                        you've added to your crate.
+                    </p>
+
+                    <a href="crate.html"
+                       class="profile-side-btn">
+
+                        View My Crate →
+
+                    </a>
+
+                </div>
+
+
+                <div class="profile-side-card">
+
+                    <h3>
+                        Subscription
+                    </h3>
+
+                    <p>
+                        Manage your weekly or monthly
+                        deliveries.
+                    </p>
+
+                    <a href="subscription.html"
+                       class="profile-side-btn">
+
+                        Manage Subscription →
+
+                    </a>
+
+                </div>
+
+
+                <div class="profile-side-card logout-card">
+
+                    <h3>
+                        Account
+                    </h3>
+
+                    <p>
+                        Finished shopping for today?
+                    </p>
+
+                    <button
+                        type="button"
+                        id="logoutBtn"
+                        class="logout-btn">
+
+                        Log Out
+
+                    </button>
+
+                </div>
+
+
+            </aside>
+
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<footer class="auth-footer">
+
+    <p>
+        © 2026 Sage & Soil. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<script src="js/profile.js"></script>
+
+</body>
+
+</html>

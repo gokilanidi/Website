@@ -1,0 +1,2069 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shop Produce | Sage & Soil</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/global.css">
+
+    <link rel="stylesheet" href="css/products.css">
+
+</head>
+
+<body>
+<!--====================================
+                HEADER
+=====================================-->
+
+<header>
+
+    <nav class="navbar container">
+
+            <!-- LOGO -->
+            <a href="index.html" class="logo">
+                  <img src="images/icons/logo.png" alt="Sage & Soil Logo">
+                  <h2>Sage & Soil</h2>
+            </a>
+
+
+            <!-- NAV LINKS -->
+            <ul class="nav-links" id="navLinks">
+
+                  <li>
+                        <a href="index.html">Home</a>
+                  </li>
+
+                  <li>
+                        <a class="active" href="products.html">Shop Produce</a>
+                  </li>
+
+                  <li>
+                        <a href="crate.html">My Crate</a>
+                  </li>
+
+                  <li>
+                        <a href="subscription.html">Subscription</a>
+                  </li>
+
+                  <li>
+                        <a href="about.html">About</a>
+                  </li>
+
+                  <li>
+                        <a href="contact.html">Contact</a>
+                  </li>
+
+            </ul>
+
+
+            <!-- RIGHT SIDE: MENU + BASKET + USER -->
+            <div class="nav-actions">
+
+                  <!-- HAMBURGER -->
+                  <button
+                        class="menu-toggle"
+                        id="menuToggle"
+                        type="button"
+                        aria-label="Open navigation"
+                        aria-expanded="false">
+                        ☰
+                  </button>
+
+
+                  <!-- BASKET -->
+                  <a href="crate.html" class="cart">
+                        🧺
+                     <span id="cartCount">0</span>
+                  </a>
+
+                  <!-- USER -->
+                  <a href="profile.html"
+                  class="profile-link"
+                  aria-label="My Profile">
+
+                        <span class="profile-icon">🤵🏻</span>
+
+                  </a>
+
+            </div>
+
+            </nav>
+</header>
+       
+
+<!--====================================
+            PRODUCTS HERO
+=====================================-->
+
+<section class="products-hero">
+
+    <div class="products-hero-content">
+
+        <div>
+
+            <p class="section-tag">
+
+                SHOP PRODUCE
+
+            </p>
+
+            <h1>
+
+                Fresh from the Farm
+
+            </h1>
+
+            <p>
+
+                51 products available
+
+            </p>
+
+        </div>
+
+        <div class="location-wrapper">
+
+            <button
+                class="location-box"
+                id="locationBox"
+                type="button"
+            >
+                <span id="currentLocation"> 📍All India</span>
+                <span class="location-arrow">🇮🇳</span>
+            </button>
+
+            <div class="location-dropdown" id="locationDropdown">
+
+                <button type="button" data-state="all">
+                    📍 All India
+                </button>
+
+                <button type="button" data-state="kerala">
+                    📍 Kerala
+                </button>
+
+                <button type="button" data-state="tamil-nadu">
+                    📍 Tamil Nadu
+                </button>
+
+                <button type="button" data-state="maharashtra">
+                    📍 Maharashtra
+                </button>
+
+                <button type="button" data-state="punjab">
+                    📍 Punjab
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!--====================================
+            CATEGORY BAR
+=====================================-->
+
+<section class="categories">
+
+    <div class="category-list">
+
+        <button class="category active" data-category="all">
+            🌾 All
+        </button>
+
+        <button class="category" data-category="vegetables">
+            🥦 Vegetables
+        </button>
+
+        <button class="category" data-category="fruits">
+            🍎 Fruits
+        </button>
+
+        <button class="category" data-category="rice">
+            🌾 Rice
+        </button>
+
+        <button class="category" data-category="millets">
+            🌱 Millets
+        </button>
+
+        <button class="category" data-category="dals">
+            🫘 Dals & Pulses
+        </button>
+
+        <button class="category" data-category="spices">
+            🌿 Spices
+        </button>
+
+        <button class="category" data-category="nuts">
+            🥜 Nuts
+        </button>
+
+    </div>
+</section>
+
+
+
+<!--====================================
+            PRODUCTS
+=====================================-->
+
+<section class="products-section">
+
+    <div class="products-container">
+
+        <!--====================================
+                FILTER SIDEBAR
+        =====================================-->
+
+        <aside class="filters">
+
+            <h2>
+
+                ⚚ Filters
+
+            </h2>
+
+
+            <!-- Availability -->
+
+            <div class="filter-group">
+
+                <div class="filter-heading">
+
+                    <h3>Availability</h3>
+
+                    <span>⌃</span>
+
+                </div>
+
+                <ul>
+
+                    <li>In Stock</li>
+
+                    <li>Harvested Today</li>
+
+                    <li>Seasonal</li>
+
+                    <li>Organic Certified</li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Price -->
+
+            <div class="filter-group">
+
+                <div class="filter-heading">
+
+                    <h3>Price Range</h3>
+
+                    <span>⌃</span>
+
+                </div>
+
+                <input
+                    type="range"
+                    min="0"
+                    max="1000"
+                    value="950"
+                >
+
+                <div class="price-range">
+
+                    <span>₹0</span>
+
+                    <span>Up to ₹1000</span>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+
+
+        <!--====================================
+                PRODUCTS CONTENT
+        =====================================-->
+
+        <div class="products-content">
+
+            <div class="sort-bar">
+
+                <p>
+
+                    Showing <strong>51</strong> products
+
+                </p>
+
+                <div class="sort-box">
+
+                    <label>
+
+                        Sort by
+
+                    </label>
+
+                    <div class="custom-sort" id="sortSelect">
+
+                        <button type="button" class="custom-sort-trigger">
+                            <span>Relevance</span>
+                            <span class="custom-sort-arrow"></span>
+                        </button>
+
+                        <div class="custom-sort-options">
+
+                            <button type="button" class="custom-sort-option active" data-value="relevance">
+                                Relevance
+                            </button>
+
+                            <button type="button" class="custom-sort-option" data-value="price-low">
+                                Price : Low to High
+                            </button>
+
+                            <button type="button" class="custom-sort-option" data-value="price-high">
+                                Price : High to Low
+                            </button>
+
+                            <button type="button" class="custom-sort-option" data-value="newest">
+                                Newest
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            
+
+        <!--====================================
+                    PRODUCT GRID
+        =====================================-->
+
+        <div class="product-grid">
+
+            <!--================ TOMATO ================-->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/products/tomato.png" alt="Tomato">
+
+                    <span class="organic">🌿 Organic</span>
+
+                    <span class="rating">⭐ 4.8</span>
+
+                    <span class="harvest">Harvested Today</span>
+
+                </div>
+
+                <div class="product-details">
+
+                    <h3>Fresh Tomatoes</h3>
+
+                    <p class="harvest-date">📅 Harvested 15 Jul</p>
+
+                    <div class="price-row">
+
+                        <p class="price">₹60 <span>/ kg</span></p>
+
+                        <p class="reviews">214 reviews</p>
+
+                    </div>
+
+                    <button class="btn btn-primary">Add to Crate</button>
+
+                </div>
+
+            </div>
+
+
+
+            <!--================ POTATO ================-->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/products/potato.png" alt="Potato">
+
+                    <span class="organic">🌿 Organic</span>
+
+                    <span class="rating">⭐ 4.5</span>
+
+                </div>
+
+                <div class="product-details">
+
+                    <h3>Farm Potatoes</h3>
+
+                    <p class="harvest-date">📅 Harvested 14 Jul</p>
+
+                    <div class="price-row">
+
+                        <p class="price">₹38 <span>/ kg</span></p>
+
+                        <p class="reviews">189 reviews</p>
+
+                    </div>
+
+                    <button class="btn btn-primary">Add to Crate</button>
+
+                </div>
+
+            </div>
+
+
+
+            <!--================ ONION ================-->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/products/onion.png" alt="Onion">
+
+                    <span class="organic">🌿 Organic</span>
+
+                    <span class="rating">⭐ 4.7</span>
+
+                </div>
+
+                <div class="product-details">
+
+                    <h3>Red Onions</h3>
+
+                    <p class="harvest-date">📅 Harvested 13 Jul</p>
+
+                    <div class="price-row">
+
+                        <p class="price">₹45 <span>/ kg</span></p>
+
+                        <p class="reviews">241 reviews</p>
+
+                    </div>
+
+                    <button class="btn btn-primary">Add to Crate</button>
+
+                </div>
+
+            </div>
+
+
+
+            <!--================ SPINACH ================-->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/products/spinach.png" alt="Spinach">
+
+                    <span class="organic">🌿 Organic</span>
+
+                    <span class="rating">⭐ 4.9</span>
+
+                    <span class="harvest">Harvested Today</span>
+
+                </div>
+
+                <div class="product-details">
+
+                    <h3>Baby Spinach</h3>
+
+                    <p class="harvest-date">📅 Harvested 15 Jul</p>
+
+                    <div class="price-row">
+
+                        <p class="price">₹55 <span>/ bunch</span></p>
+
+                        <p class="reviews">136 reviews</p>
+
+                    </div>
+
+                    <button class="btn btn-primary">Add to Crate</button>
+
+                </div>
+
+            </div>
+
+
+
+            <!--================ BROCCOLI ================-->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/products/broccoli.png" alt="Broccoli">
+
+                    <span class="organic">🌿 Organic</span>
+
+                    <span class="rating">⭐ 4.8</span>
+
+                </div>
+
+                <div class="product-details">
+
+                    <h3>Green Broccoli</h3>
+
+                    <p class="harvest-date">📅 Harvested 14 Jul</p>
+
+                    <div class="price-row">
+
+                        <p class="price">₹80 <span>/ 250 g</span></p>
+
+                        <p class="reviews">174 reviews</p>
+
+                    </div>
+
+                    <button class="btn btn-primary">Add to Crate</button>
+
+                </div>
+
+            </div>
+
+
+
+            <!--================ BRINJAL ================-->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/products/brinjal.png" alt="Brinjal">
+
+                    <span class="organic">🌿 Organic</span>
+
+                    <span class="rating">⭐ 4.4</span>
+
+                </div>
+
+                <div class="product-details">
+
+                    <h3>Purple Brinjal</h3>
+
+                    <p class="harvest-date">📅 Harvested 12 Jul</p>
+
+                    <div class="price-row">
+
+                        <p class="price">₹48 <span>/ kg</span></p>
+
+                        <p class="reviews">98 reviews</p>
+
+                    </div>
+
+                    <button class="btn btn-primary">Add to Crate</button>
+
+                </div>
+
+            </div>
+
+
+
+            <!--================ OKRA ================-->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/products/okra.png" alt="Okra">
+
+                    <span class="organic">🌿 Organic</span>
+
+                    <span class="rating">⭐ 4.6</span>
+
+                </div>
+
+                <div class="product-details">
+
+                    <h3>Fresh Okra</h3>
+
+                    <p class="harvest-date">📅 Harvested 14 Jul</p>
+
+                    <div class="price-row">
+
+                        <p class="price">₹52 <span>/ 500 g</span></p>
+
+                        <p class="reviews">116 reviews</p>
+
+                    </div>
+
+                    <button class="btn btn-primary">Add to Crate</button>
+
+                </div>
+
+            </div>
+
+
+
+            <!--================ CABBAGE ================-->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/products/cabbage.png" alt="Cabbage">
+
+                    <span class="organic">🌿 Organic</span>
+
+                    <span class="rating">⭐ 4.5</span>
+
+                </div>
+
+                <div class="product-details">
+
+                    <h3>Green Cabbage</h3>
+
+                    <p class="harvest-date">📅 Harvested 13 Jul</p>
+
+                    <div class="price-row">
+
+                        <p class="price">₹42 <span>/ piece</span></p>
+
+                        <p class="reviews">83 reviews</p>
+
+                    </div>
+
+                    <button class="btn btn-primary">Add to Crate</button>
+
+                </div>
+
+            </div>
+
+
+
+            <!--================ CAPSICUM ================-->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/products/capsicum.png" alt="Capsicum">
+
+                    <span class="organic">🌿 Organic</span>
+
+                    <span class="rating">⭐ 4.7</span>
+
+                </div>
+
+                <div class="product-details">
+
+                    <h3>Green Capsicum</h3>
+
+                    <p class="harvest-date">📅 Harvested 15 Jul</p>
+
+                    <div class="price-row">
+
+                        <p class="price">₹68 <span>/ 500 g</span></p>
+
+                        <p class="reviews">142 reviews</p>
+
+                    </div>
+
+                    <button class="btn btn-primary">Add to Crate</button>
+
+                </div>
+
+            </div>
+
+
+
+            <!--================ CAULIFLOWER ================-->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/products/cauliflower.png" alt="Cauliflower">
+
+                    <span class="organic">🌿 Organic</span>
+
+                    <span class="rating">⭐ 4.6</span>
+
+                </div>
+
+                <div class="product-details">
+
+                    <h3>Fresh Cauliflower</h3>
+
+                    <p class="harvest-date">📅 Harvested 14 Jul</p>
+
+                    <div class="price-row">
+
+                        <p class="price">₹58 <span>/ piece</span></p>
+
+                        <p class="reviews">127 reviews</p>
+
+                    </div>
+
+                    <button class="btn btn-primary">Add to Crate</button>
+
+                </div>
+
+            </div>
+            
+
+            <!--================ APPLE ================-->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                        <img src="images/products/apple.png" alt="Apple">
+
+                        <span class="organic">🌿 Organic</span>
+
+                        <span class="rating">⭐ 4.9</span>
+
+                        <span class="harvest">Harvested Today</span>
+
+                </div>
+
+                <div class="product-details">
+
+                        <h3>Fresh Apples</h3>
+
+                        <p class="harvest-date">📅 Harvested 15 Jul</p>
+
+                        <div class="price-row">
+
+                            <p class="price">₹180 <span>/ kg</span></p>
+
+                            <p class="reviews">325 reviews</p>
+
+                        </div>
+
+                        <button class="btn btn-primary">Add to Crate</button>
+
+                </div>
+
+            </div>
+
+
+
+            <!--================ BANANA ================-->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                        <img src="images/products/banana.png" alt="Banana">
+
+                        <span class="organic">🌿 Organic</span>
+
+                        <span class="rating">⭐ 4.8</span>
+
+                </div>
+
+                <div class="product-details">
+
+                        <h3>Bananas</h3>
+
+                        <p class="harvest-date">📅 Harvested 14 Jul</p>
+
+                    <div class="price-row">
+
+                            <p class="price">₹65 <span>/ dozen</span></p>
+
+                            <p class="reviews">281 reviews</p>
+
+                    </div>
+
+                        <button class="btn btn-primary">Add to Crate</button>
+
+                </div>
+
+            </div>
+
+
+
+            <!--================ GRAPES ================-->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                        <img src="images/products/grapes.png" alt="Grapes">
+
+                        <span class="organic">🌿 Organic</span>
+
+                        <span class="rating">⭐ 4.7</span>
+                </div>
+
+                <div class="product-details">
+
+                        <h3>Green Grapes</h3>
+
+                        <p class="harvest-date">📅 Harvested 13 Jul</p>
+
+                    <div class="price-row">
+
+                            <p class="price">₹120 <span>/ 500 g</span></p>
+
+                            <p class="reviews">164 reviews</p>
+
+                    </div>
+
+                        <button class="btn btn-primary">Add to Crate</button>
+
+                </div>
+
+            </div>
+
+
+
+            <!--================ GUAVA ================-->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/products/guava.png" alt="Guava">
+
+                    <span class="organic">🌿 Organic</span>
+
+                    <span class="rating">⭐ 4.6</span>
+
+                </div>
+
+                <div class="product-details">
+
+                        <h3>Fresh Guava</h3>
+
+                        <p class="harvest-date">📅 Harvested 15 Jul</p>
+
+                    <div class="price-row">
+
+                            <p class="price">₹75 <span>/ kg</span></p>
+
+                            <p class="reviews">102 reviews</p>
+
+                    </div>
+
+                        <button class="btn btn-primary">Add to Crate</button>
+
+                </div>
+
+            </div>
+
+
+
+            <!--================ MANGO ================-->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img src="images/products/mango.png" alt="Mango">
+
+                        <span class="organic">🌿 Organic</span>
+
+                        <span class="rating">⭐ 5.0</span>
+
+                        <span class="harvest">Harvested Today</span>
+
+                    </div>
+
+                    <div class="product-details">
+
+                        <h3>Alphonso Mango</h3>
+
+                        <p class="harvest-date">📅 Harvested 15 Jul</p>
+
+                        <div class="price-row">
+
+                            <p class="price">₹220 <span>/ kg</span></p>
+
+                            <p class="reviews">462 reviews</p>
+
+                        </div>
+
+                        <button class="btn btn-primary">Add to Crate</button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!--================ ORANGE ================-->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img src="images/products/orange.png" alt="Orange">
+
+                        <span class="organic">🌿 Organic</span>
+
+                        <span class="rating">⭐ 4.8</span>
+
+                    </div>
+
+                    <div class="product-details">
+
+                        <h3>Sweet Oranges</h3>
+
+                        <p class="harvest-date">📅 Harvested 14 Jul</p>
+
+                        <div class="price-row">
+
+                            <p class="price">₹110 <span>/ kg</span></p>
+
+                            <p class="reviews">197 reviews</p>
+
+                        </div>
+
+                        <button class="btn btn-primary">Add to Crate</button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!--================ PAPAYA ================-->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img src="images/products/papaya.png" alt="Papaya">
+
+                        <span class="organic">🌿 Organic</span>
+
+                        <span class="rating">⭐ 4.6</span>
+
+                    </div>
+
+                    <div class="product-details">
+
+                        <h3>Ripe Papaya</h3>
+
+                        <p class="harvest-date">📅 Harvested 13 Jul</p>
+
+                        <div class="price-row">
+
+                            <p class="price">₹85 <span>/ piece</span></p>
+
+                            <p class="reviews">118 reviews</p>
+
+                        </div>
+
+                        <button class="btn btn-primary">Add to Crate</button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!--================ WATERMELON ================-->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img src="images/products/watermelon.png" alt="Watermelon">
+
+                        <span class="organic">🌿 Organic</span>
+
+                        <span class="rating">⭐ 4.9</span>
+
+                    </div>
+
+                    <div class="product-details">
+
+                        <h3>Watermelon</h3>
+
+                        <p class="harvest-date">📅 Harvested 15 Jul</p>
+
+                        <div class="price-row">
+
+                            <p class="price">₹45 <span>/ kg</span></p>
+
+                            <p class="reviews">208 reviews</p>
+
+                        </div>
+
+                        <button class="btn btn-primary">Add to Crate</button>
+
+                    </div>
+
+                </div>
+
+                    <!--================ BASMATI RICE ================-->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img src="images/products/basmati-rice.webp" alt="Basmati Rice">
+
+                        <span class="organic">🌿 Organic</span>
+
+                        <span class="rating">⭐ 4.9</span>
+
+                    </div>
+
+                    <div class="product-details">
+
+                        <h3>Basmati Rice</h3>
+
+                        <p class="harvest-date">📅 Packed 10 Jul</p>
+
+                        <div class="price-row">
+
+                            <p class="price">₹180 <span>/ kg</span></p>
+
+                            <p class="reviews">352 reviews</p>
+
+                        </div>
+
+                        <button class="btn btn-primary">Add to Crate</button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!--================ BROWN RICE ================-->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img src="images/products/brown-rice.png" alt="Brown Rice">
+
+                        <span class="organic">🌿 Organic</span>
+
+                        <span class="rating">⭐ 4.7</span>
+
+                    </div>
+
+                    <div class="product-details">
+
+                        <h3>Brown Rice</h3>
+
+                        <p class="harvest-date">📅 Packed 12 Jul</p>
+
+                        <div class="price-row">
+
+                            <p class="price">₹145 <span>/ kg</span></p>
+
+                            <p class="reviews">214 reviews</p>
+
+                        </div>
+
+                        <button class="btn btn-primary">Add to Crate</button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!--================ MATTA RICE ================-->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img src="images/products/matta-rice.webp" alt="Matta Rice">
+
+                        <span class="organic">🌿 Organic</span>
+
+                        <span class="rating">⭐ 4.8</span>
+
+                    </div>
+
+                    <div class="product-details">
+
+                        <h3>Matta Rice</h3>
+
+                        <p class="harvest-date">📅 Packed 11 Jul</p>
+
+                        <div class="price-row">
+
+                            <p class="price">₹95 <span>/ kg</span></p>
+
+                            <p class="reviews">168 reviews</p>
+
+                        </div>
+
+                        <button class="btn btn-primary">Add to Crate</button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!--================ RED RICE ================-->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img src="images/products/red-rice.png" alt="Red Rice">
+
+                        <span class="organic">🌿 Organic</span>
+
+                        <span class="rating">⭐ 4.6</span>
+
+                    </div>
+
+                    <div class="product-details">
+
+                        <h3>Red Rice</h3>
+
+                        <p class="harvest-date">📅 Packed 13 Jul</p>
+
+                        <div class="price-row">
+
+                            <p class="price">₹130 <span>/ kg</span></p>
+
+                            <p class="reviews">126 reviews</p>
+
+                        </div>
+
+                        <button class="btn btn-primary">Add to Crate</button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!--================ SONA MASOORI ================-->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img src="images/products/sona-masoori.png" alt="Sona Masoori">
+
+                        <span class="organic">🌿 Organic</span>
+
+                        <span class="rating">⭐ 4.8</span>
+
+                    </div>
+
+                    <div class="product-details">
+
+                        <h3>Sona Masoori Rice</h3>
+
+                        <p class="harvest-date">📅 Packed 09 Jul</p>
+
+                        <div class="price-row">
+
+                            <p class="price">₹110 <span>/ kg</span></p>
+
+                            <p class="reviews">241 reviews</p>
+
+                        </div>
+
+                        <button class="btn btn-primary">Add to Crate</button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!--================ BAJRA ================-->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img src="images/products/bajra.png" alt="Bajra">
+
+                        <span class="organic">🌿 Organic</span>
+
+                        <span class="rating">⭐ 4.7</span>
+
+                    </div>
+
+                    <div class="product-details">
+
+                        <h3>Bajra Millet</h3>
+
+                        <p class="harvest-date">📅 Packed 14 Jul</p>
+
+                        <div class="price-row">
+
+                            <p class="price">₹85 <span>/ kg</span></p>
+
+                            <p class="reviews">117 reviews</p>
+
+                        </div>
+
+                        <button class="btn btn-primary">Add to Crate</button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!--================ FOXTAIL ================-->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img src="images/products/foxtail-millet.png" alt="Foxtail Millet">
+
+                        <span class="organic">🌿 Organic</span>
+
+                        <span class="rating">⭐ 4.8</span>
+
+                    </div>
+
+                    <div class="product-details">
+
+                        <h3>Foxtail Millet</h3>
+
+                        <p class="harvest-date">📅 Packed 12 Jul</p>
+
+                        <div class="price-row">
+
+                            <p class="price">₹120 <span>/ kg</span></p>
+
+                            <p class="reviews">134 reviews</p>
+
+                        </div>
+
+                        <button class="btn btn-primary">Add to Crate</button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!--================ JOWAR ================-->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img src="images/products/jowar.png" alt="Jowar">
+
+                        <span class="organic">🌿 Organic</span>
+
+                        <span class="rating">⭐ 4.6</span>
+
+                    </div>
+
+                    <div class="product-details">
+
+                        <h3>Jowar Millet</h3>
+
+                        <p class="harvest-date">📅 Packed 13 Jul</p>
+
+                        <div class="price-row">
+
+                            <p class="price">₹90 <span>/ kg</span></p>
+
+                            <p class="reviews">104 reviews</p>
+
+                        </div>
+
+                        <button class="btn btn-primary">Add to Crate</button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!--================ LITTLE MILLET ================-->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img src="images/products/little-millet.png" alt="Little Millet">
+
+                        <span class="organic">🌿 Organic</span>
+
+                        <span class="rating">⭐ 4.7</span>
+
+                    </div>
+
+                    <div class="product-details">
+
+                        <h3>Little Millet</h3>
+
+                        <p class="harvest-date">📅 Packed 11 Jul</p>
+
+                        <div class="price-row">
+
+                            <p class="price">₹125 <span>/ kg</span></p>
+
+                            <p class="reviews">98 reviews</p>
+
+                        </div>
+
+                        <button class="btn btn-primary">Add to Crate</button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!--================ RAGI ================-->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img src="images/products/ragi.png" alt="Ragi">
+
+                        <span class="organic">🌿 Organic</span>
+
+                        <span class="rating">⭐ 4.8</span>
+
+                    </div>
+
+                    <div class="product-details">
+
+                        <h3>Ragi Millet</h3>
+
+                        <p class="harvest-date">📅 Packed 10 Jul</p>
+
+                        <div class="price-row">
+
+                            <p class="price">₹95 <span>/ kg</span></p>
+
+                            <p class="reviews">145 reviews</p>
+
+                        </div>
+
+                        <button class="btn btn-primary">Add to Crate</button>
+
+                    </div>
+
+                </div>
+
+                    <!--================ CHANA DAL ================-->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img src="images/products/chana-dal.png" alt="Chana Dal">
+
+                        <span class="organic">🌿 Organic</span>
+
+                        <span class="rating">⭐ 4.8</span>
+
+                    </div>
+
+                    <div class="product-details">
+
+                        <h3>Chana Dal</h3>
+
+                        <p class="harvest-date">📅 Packed 12 Jul</p>
+
+                        <div class="price-row">
+
+                            <p class="price">₹110 <span>/ kg</span></p>
+
+                            <p class="reviews">194 reviews</p>
+
+                        </div>
+
+                        <button class="btn btn-primary">Add to Crate</button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!--================ MASOOR DAL ================-->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img src="images/products/masoor-dal.png" alt="Masoor Dal">
+
+                        <span class="organic">🌿 Organic</span>
+
+                        <span class="rating">⭐ 4.7</span>
+
+                    </div>
+
+                    <div class="product-details">
+
+                        <h3>Masoor Dal</h3>
+
+                        <p class="harvest-date">📅 Packed 11 Jul</p>
+
+                        <div class="price-row">
+
+                            <p class="price">₹125 <span>/ kg</span></p>
+
+                            <p class="reviews">156 reviews</p>
+
+                        </div>
+
+                        <button class="btn btn-primary">Add to Crate</button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!--================ MOONG DAL ================-->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img src="images/products/moong-dal.png" alt="Moong Dal">
+
+                        <span class="organic">🌿 Organic</span>
+
+                        <span class="rating">⭐ 4.9</span>
+
+                    </div>
+
+                    <div class="product-details">
+
+                        <h3>Moong Dal</h3>
+
+                        <p class="harvest-date">📅 Packed 13 Jul</p>
+
+                        <div class="price-row">
+
+                            <p class="price">₹135 <span>/ kg</span></p>
+
+                            <p class="reviews">223 reviews</p>
+
+                        </div>
+
+                        <button class="btn btn-primary">Add to Crate</button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!--================ TOOR DAL ================-->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img src="images/products/toor-dal.png" alt="Toor Dal">
+
+                        <span class="organic">🌿 Organic</span>
+
+                        <span class="rating">⭐ 4.8</span>
+
+                    </div>
+
+                    <div class="product-details">
+
+                        <h3>Toor Dal</h3>
+
+                        <p class="harvest-date">📅 Packed 10 Jul</p>
+
+                        <div class="price-row">
+
+                            <p class="price">₹140 <span>/ kg</span></p>
+
+                            <p class="reviews">245 reviews</p>
+
+                        </div>
+
+                        <button class="btn btn-primary">Add to Crate</button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!--================ URAD DAL ================-->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img src="images/products/urad-dal.png" alt="Urad Dal">
+
+                        <span class="organic">🌿 Organic</span>
+
+                        <span class="rating">⭐ 4.7</span>
+
+                    </div>
+
+                    <div class="product-details">
+
+                        <h3>Urad Dal</h3>
+
+                        <p class="harvest-date">📅 Packed 14 Jul</p>
+
+                        <div class="price-row">
+
+                            <p class="price">₹130 <span>/ kg</span></p>
+
+                            <p class="reviews">176 reviews</p>
+
+                        </div>
+
+                        <button class="btn btn-primary">Add to Crate</button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!--================ RAJMA ================-->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img src="images/products/rajma.png" alt="Rajma">
+
+                        <span class="organic">🌿 Organic</span>
+
+                        <span class="rating">⭐ 4.8</span>
+
+                    </div>
+
+                    <div class="product-details">
+
+                        <h3>Red Rajma</h3>
+
+                        <p class="harvest-date">📅 Packed 09 Jul</p>
+
+                        <div class="price-row">
+
+                            <p class="price">₹160 <span>/ kg</span></p>
+
+                            <p class="reviews">211 reviews</p>
+
+                        </div>
+
+                        <button class="btn btn-primary">Add to Crate</button>
+
+                    </div>
+
+                </div>
+
+                    <!--================ BLACK PEPPER ================-->
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/black-pepper.png" alt="Black Pepper">
+                        <span class="organic">🌿 Organic</span>
+                        <span class="rating">⭐ 4.9</span>
+                    </div>
+
+                    <div class="product-details">
+                        <h3>Black Pepper</h3>
+                        <p class="harvest-date">📅 Packed 12 Jul</p>
+
+                        <div class="price-row">
+                            <p class="price">₹180 <span>/ 250 g</span></p>
+                            <p class="reviews">192 reviews</p>
+                        </div>
+
+                        <button class="btn btn-primary">Add to Crate</button>
+                    </div>
+                </div>
+
+
+
+                <!--================ CHILLI POWDER ================-->
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/chilli-powder.png" alt="Chilli Powder">
+                        <span class="organic">🌿 Organic</span>
+                        <span class="rating">⭐ 4.8</span>
+                    </div>
+
+                    <div class="product-details">
+                        <h3>Chilli Powder</h3>
+                        <p class="harvest-date">📅 Packed 13 Jul</p>
+
+                        <div class="price-row">
+                            <p class="price">₹95 <span>/ 200 g</span></p>
+                            <p class="reviews">216 reviews</p>
+                        </div>
+
+                        <button class="btn btn-primary">Add to Crate</button>
+                    </div>
+                </div>
+
+
+
+                <!--================ CINNAMON ================-->
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/cinnamon.png" alt="Cinnamon">
+                        <span class="organic">🌿 Organic</span>
+                        <span class="rating">⭐ 4.7</span>
+                    </div>
+
+                    <div class="product-details">
+                        <h3>Cinnamon Sticks</h3>
+                        <p class="harvest-date">📅 Packed 10 Jul</p>
+
+                        <div class="price-row">
+                            <p class="price">₹140 <span>/ 100 g</span></p>
+                            <p class="reviews">124 reviews</p>
+                        </div>
+
+                        <button class="btn btn-primary">Add to Crate</button>
+                    </div>
+                </div>
+
+
+
+                <!--================ CORIANDER POWDER ================-->
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/coriander-powder.png" alt="Coriander Powder">
+                        <span class="organic">🌿 Organic</span>
+                        <span class="rating">⭐ 4.8</span>
+                    </div>
+
+                    <div class="product-details">
+                        <h3>Coriander Powder</h3>
+                        <p class="harvest-date">📅 Packed 11 Jul</p>
+
+                        <div class="price-row">
+                            <p class="price">₹80 <span>/ 200 g</span></p>
+                            <p class="reviews">153 reviews</p>
+                        </div>
+
+                        <button class="btn btn-primary">Add to Crate</button>
+                    </div>
+                </div>
+
+
+
+                <!--================ CUMIN ================-->
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/cumin.png" alt="Cumin">
+                        <span class="organic">🌿 Organic</span>
+                        <span class="rating">⭐ 4.9</span>
+                    </div>
+
+                    <div class="product-details">
+                        <h3>Cumin Seeds</h3>
+                        <p class="harvest-date">📅 Packed 14 Jul</p>
+
+                        <div class="price-row">
+                            <p class="price">₹110 <span>/ 200 g</span></p>
+                            <p class="reviews">178 reviews</p>
+                        </div>
+
+                        <button class="btn btn-primary">Add to Crate</button>
+                    </div>
+                </div>
+
+
+
+                <!--================ TURMERIC ================-->
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/turmeric.png" alt="Turmeric">
+                        <span class="organic">🌿 Organic</span>
+                        <span class="rating">⭐ 5.0</span>
+                    </div>
+
+                    <div class="product-details">
+                        <h3>Turmeric Powder</h3>
+                        <p class="harvest-date">📅 Packed 12 Jul</p>
+
+                        <div class="price-row">
+                            <p class="price">₹85 <span>/ 200 g</span></p>
+                            <p class="reviews">238 reviews</p>
+                        </div>
+
+                        <button class="btn btn-primary">Add to Crate</button>
+                    </div>
+                </div>
+
+
+
+                <!--================ ALMONDS ================-->
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/almonds.png" alt="Almonds">
+                        <span class="organic">🌿 Premium</span>
+                        <span class="rating">⭐ 4.9</span>
+                    </div>
+
+                    <div class="product-details">
+                        <h3>California Almonds</h3>
+                        <p class="harvest-date">📅 Packed 09 Jul</p>
+
+                        <div class="price-row">
+                            <p class="price">₹420 <span>/ 500 g</span></p>
+                            <p class="reviews">346 reviews</p>
+                        </div>
+
+                        <button class="btn btn-primary">Add to Crate</button>
+                    </div>
+                </div>
+
+
+
+                <!--================ CASHEWS ================-->
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/cashews.png" alt="Cashews">
+                        <span class="organic">🌿 Premium</span>
+                        <span class="rating">⭐ 4.9</span>
+                    </div>
+
+                    <div class="product-details">
+                        <h3>Whole Cashews</h3>
+                        <p class="harvest-date">📅 Packed 08 Jul</p>
+
+                        <div class="price-row">
+                            <p class="price">₹520 <span>/ 500 g</span></p>
+                            <p class="reviews">291 reviews</p>
+                        </div>
+
+                        <button class="btn btn-primary">Add to Crate</button>
+                    </div>
+                </div>
+
+
+
+                <!--================ PEANUTS ================-->
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/peanuts.png" alt="Peanuts">
+                        <span class="organic">🌿 Organic</span>
+                        <span class="rating">⭐ 4.6</span>
+                    </div>
+
+                    <div class="product-details">
+                        <h3>Raw Peanuts</h3>
+                        <p class="harvest-date">📅 Packed 13 Jul</p>
+
+                        <div class="price-row">
+                            <p class="price">₹95 <span>/ kg</span></p>
+                            <p class="reviews">142 reviews</p>
+                        </div>
+
+                        <button class="btn btn-primary">Add to Crate</button>
+                    </div>
+                </div>
+
+
+
+                <!--================ PISTACHIOS ================-->
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/pistachios.png" alt="Pistachios">
+                        <span class="organic">🌿 Premium</span>
+                        <span class="rating">⭐ 5.0</span>
+                    </div>
+
+                    <div class="product-details">
+                        <h3>Pistachios</h3>
+                        <p class="harvest-date">📅 Packed 11 Jul</p>
+
+                        <div class="price-row">
+                            <p class="price">₹680 <span>/ 500 g</span></p>
+                            <p class="reviews">274 reviews</p>
+                        </div>
+
+                        <button class="btn btn-primary">Add to Crate</button>
+                    </div>
+                </div>
+
+
+
+                <!--================ WALNUTS ================-->
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/walnuts.png" alt="Walnuts">
+                        <span class="organic">🌿 Premium</span>
+                        <span class="rating">⭐ 4.9</span>
+                    </div>
+
+                    <div class="product-details">
+                        <h3>Walnuts</h3>
+                        <p class="harvest-date">📅 Packed 10 Jul</p>
+
+                        <div class="price-row">
+                            <p class="price">₹640 <span>/ 500 g</span></p>
+                            <p class="reviews">231 reviews</p>
+                        </div>
+
+                        <button class="btn btn-primary">Add to Crate</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+                           FOOTER
+====================================================== -->
+
+<footer class="footer">
+
+    <div class="container">
+
+
+        <div class="footer-grid">
+
+
+            <!-- ABOUT -->
+
+            <div class="footer-column footer-about">
+
+                <h2>
+                    Sage & Soil
+                </h2>
+
+                <p>
+
+                    Bringing farm-fresh, organic produce
+                    directly from trusted Indian farmers
+                    to your doorstep.
+
+                </p>
+
+
+                <div class="social-icons">
+
+                    <a
+                        href="#"
+                        aria-label="Instagram"
+                    >
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a
+                        href="#"
+                        aria-label="Facebook"
+                    >
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <a
+                        href="#"
+                        aria-label="LinkedIn"
+                    >
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+
+                    <a
+                        href="#"
+                        aria-label="X"
+                    >
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- EXPLORE -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Explore
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="products.html">
+                            Products
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="subscription.html">
+                            Subscription
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="farmers.html">
+                            Farmers
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About Us
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- SUPPORT -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Support
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            FAQ
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Privacy Policy
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Terms & Conditions
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- CONTACT -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Contact
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <span>📍</span>
+                        <span>Kollam, Kerala</span>
+                  </li>
+
+                  <li>
+                        <span>📞</span>
+                        <span>+91 98765 43210</span>
+                  </li>
+
+                    <li>
+                        <li>
+                        <span>✉</span>
+                        hello@sageandsoil.com
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="footer-bottom">
+
+            <p>
+
+                ©
+                <span id="currentYear">
+                    2026
+                </span>
+
+                Sage & Soil.
+                All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+                       JAVASCRIPT
+====================================================== -->
+
+<script src="js/cart.js"></script>
+<script src="js/products.js"></script>
+
+</body>
+
+</html>

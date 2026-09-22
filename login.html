@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Login | Sage & Soil</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="css/global.css">
+
+    <link rel="stylesheet"
+          href="css/auth.css">
+
+</head>
+
+
+<body class="auth-page">
+
+<a href="index.html"
+   class="home-corner"
+   aria-label="Go to Home">
+
+    <img
+        src="images/icons/home.webp"
+        alt=""
+        class="home-icon">
+
+</a>
+
+
+
+<!-- LOGIN -->
+
+<main class="auth-main">
+
+    <div class="auth-card">
+
+
+        <div class="auth-heading">
+
+            <div class="auth-icon">
+                <img src="images/icons/logo.png" alt="Sage & Soil">
+            </div>
+
+            <p class="section-tag">
+                WELCOME BACK
+            </p>
+
+            <h1>
+                Login to Sage & Soil
+            </h1>
+
+            <p>
+                Access your crate, subscriptions
+                and profile.
+            </p>
+
+        </div>
+
+
+        <form id="loginForm">
+
+
+            <div class="form-group">
+
+                <label for="loginEmail">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="loginEmail"
+                    placeholder="you@example.com"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="loginPassword">
+                    Password
+                </label>
+
+                <div class="password-field">
+
+                    <input
+                        type="password"
+                        id="loginPassword"
+                        placeholder="Enter your password"
+                        required>
+
+                    <button
+                        type="button"
+                        class="password-toggle"
+                        data-target="loginPassword">
+
+                        👁
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-options">
+
+                <label class="remember-me">
+                    <input type="checkbox" id="rememberMe">
+                    <span class="remember-box"></span>
+                    <span class="remember-text">Remember me</span>
+                </label>
+
+
+                <button
+                    type="button"
+                    id="forgotPassword"
+                    class="forgot-password">
+
+                    Forgot password?
+
+                </button>
+
+            </div>
+
+
+            <p
+                id="loginError"
+                class="form-error">
+            </p>
+
+
+            <button
+                type="submit"
+                class="auth-submit">
+
+                Login
+
+            </button>
+
+
+        </form>
+
+
+        <div class="auth-divider">
+
+            <span>
+                New to Sage & Soil?
+            </span>
+
+        </div>
+
+
+        <a href="create-account.html"
+           class="create-account-btn">
+
+            Create an Account
+
+        </a>
+
+
+    </div>
+
+</main>
+
+
+<!-- =====================================================
+              FORGOT PASSWORD OVERLAY
+===================================================== -->
+
+<div class="forgot-overlay" id="forgotOverlay">
+
+    <!-- EMAIL CARD -->
+
+    <div class="forgot-card" id="forgotEmailCard">
+
+        <button
+            type="button"
+            class="forgot-close"
+            id="forgotClose"
+            aria-label="Close">
+            ×
+        </button>
+
+        <div class="forgot-card-icon">
+            <img
+                src="images/icons/logo.png"
+                alt="Sage & Soil">
+        </div>
+
+        <p class="forgot-tag">
+            PASSWORD RESET
+        </p>
+
+        <h2>
+            Forgot your password?
+        </h2>
+
+        <p class="forgot-description">
+            Enter the email address associated with
+            your Sage & Soil account.
+        </p>
+
+        <form id="forgotForm">
+
+            <div class="forgot-form-group">
+
+                <label for="forgotEmail">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="forgotEmail"
+                    placeholder="you@example.com"
+                    required>
+
+            </div>
+
+            <p
+                id="forgotError"
+                class="forgot-error">
+            </p>
+
+            <button
+                type="submit"
+                class="forgot-submit">
+                Get OTP
+            </button>
+
+        </form>
+
+        <button
+            type="button"
+            class="forgot-back"
+            id="forgotBack">
+            Back to Login
+        </button>
+
+    </div>
+
+
+    <!-- OTP CARD -->
+
+    <div
+        class="forgot-card otp-card"
+        id="otpCard">
+
+        <button
+            type="button"
+            class="forgot-close"
+            id="otpClose"
+            aria-label="Close">
+            ×
+        </button>
+
+        <div class="forgot-card-icon">
+            <img
+                src="images/icons/logo.png"
+                alt="Sage & Soil">
+        </div>
+
+        <p class="forgot-tag">
+            VERIFY YOUR EMAIL
+        </p>
+
+        <h2>
+            Enter your OTP
+        </h2>
+
+        <p class="otp-description">
+
+            We've sent a 6-digit OTP to
+
+            <strong id="maskedEmail">
+                ****@gmail.com
+            </strong>
+
+        </p>
+
+
+        <div
+            class="otp-inputs"
+            id="otpInputs">
+
+            <input
+                type="text"
+                maxlength="1"
+                inputmode="numeric">
+
+            <input
+                type="text"
+                maxlength="1"
+                inputmode="numeric">
+
+            <input
+                type="text"
+                maxlength="1"
+                inputmode="numeric">
+
+            <input
+                type="text"
+                maxlength="1"
+                inputmode="numeric">
+
+            <input
+                type="text"
+                maxlength="1"
+                inputmode="numeric">
+
+            <input
+                type="text"
+                maxlength="1"
+                inputmode="numeric">
+
+        </div>
+
+
+        <p
+            class="otp-timer"
+            id="otpTimer">
+
+            OTP expires in
+            <strong>02:00</strong>
+
+        </p>
+
+
+        <p
+            class="forgot-error otp-error"
+            id="otpError">
+        </p>
+
+
+        <button
+            type="button"
+            class="forgot-submit"
+            id="verifyOtp">
+
+            Verify OTP
+
+        </button>
+
+
+        <button
+            type="button"
+            class="resend-otp"
+            id="resendOtp"
+            disabled>
+
+            Resend OTP
+
+        </button>
+
+
+        <button
+            type="button"
+            class="forgot-back"
+            id="otpBack">
+
+            Back to Email
+
+        </button>
+
+    </div>
+
+</div>
+
+
+<footer class="auth-footer">
+
+
+<footer class="auth-footer">
+
+    <p>
+        © 2026 Sage & Soil. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<script src="js/auth.js"></script>
+
+</body>
+
+</html>

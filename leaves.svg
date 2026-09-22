@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 180 180">
+
+<g>
+
+<path
+d="M45 18
+C68 30
+72 58
+45 82
+C20 62
+18 35
+45 18Z"
+fill="#6DA35D"/>
+
+<path
+d="M45 20
+L45 78"
+stroke="#507944"
+stroke-width="2"/>
+
+<path
+d="M115 55
+C140 65
+145 95
+118 118
+C92 98
+90 70
+115 55Z"
+fill="#6AA057"/>
+
+<path
+d="M115 58
+L118 114"
+stroke="#507944"
+stroke-width="2"/>
+
+</g>
+
+</svg>

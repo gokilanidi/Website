@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | Sage & Soil</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="css/global.css">
+
+    <link rel="stylesheet"
+          href="css/contact.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================
+                HEADER
+====================================== -->
+
+<header>
+
+    <nav class="navbar container">
+
+        <div class="logo">
+
+            <img
+                src="images/icons/logo.png"
+                alt="Sage & Soil Logo">
+
+            <h2>Sage & Soil</h2>
+
+        </div>
+
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="products.html">
+                    Shop Produce
+                </a>
+            </li>
+
+            <li>
+                <a href="crate.html">
+                    My Crate
+                </a>
+            </li>
+
+            <li>
+                <a href="subscription.html">
+                    Subscription
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html">
+                    About
+                </a>
+            </li>
+
+            <li>
+                <a
+                    class="active"
+                    href="contact.html">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+
+        <!-- RIGHT SIDE -->
+
+        <div class="nav-actions">
+
+            <!-- HAMBURGER -->
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open navigation"
+                aria-expanded="false">
+
+                ☰
+
+            </button>
+
+
+            <!-- BASKET -->
+
+            <a
+                href="crate.html"
+                class="cart"
+                aria-label="My Crate">
+
+                🧺
+
+                <span id="cartCount">
+                    0
+                </span>
+
+            </a>
+
+
+            <!-- USER -->
+
+            <a
+                href="profile.html"
+                class="profile-link"
+                aria-label="My Profile">
+
+                <span class="profile-icon">
+                    🤵🏻
+                </span>
+
+            </a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<!-- =====================================
+                HERO
+====================================== -->
+
+<section class="contact-hero">
+
+    <div class="container">
+
+        <p class="section-tag">
+            GET IN TOUCH
+        </p>
+
+        <h1>
+            We'd Love to Hear
+            From You
+        </h1>
+
+        <p>
+            Questions about subscriptions, deliveries,
+            or local farmers? Our team is here to help.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================
+            CONTACT SECTION
+====================================== -->
+
+<section class="contact-section">
+
+    <div class="container contact-grid">
+
+
+        <!-- ==========================
+                CONTACT FORM
+        =========================== -->
+
+        <div class="contact-form-card">
+
+            <h2>
+                Send us a Message
+            </h2>
+
+
+            <form id="contactForm">
+
+
+                <!-- NAME + EMAIL -->
+
+                <div class="contact-form-row">
+
+
+                    <div class="contact-field">
+
+                        <label for="contactName">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="contactName"
+                            placeholder="Full name"
+                            autocomplete="name">
+
+                    </div>
+
+
+                    <div class="contact-field">
+
+                        <label for="contactEmail">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="contactEmail"
+                            placeholder="you@example.com"
+                            autocomplete="email">
+
+                    </div>
+
+                </div>
+
+
+                <!-- SUBJECT -->
+
+                <div class="contact-field">
+
+                    <label for="contactSubject">
+                        Subject
+                    </label>
+
+                    <input
+                        type="text"
+                        id="contactSubject"
+                        placeholder="What can we help with?">
+
+                </div>
+
+
+                <!-- MESSAGE -->
+
+                <div class="contact-field">
+
+                    <label for="contactMessage">
+                        Message
+                    </label>
+
+                    <textarea
+                        id="contactMessage"
+                        rows="4"
+                        placeholder="Write your message..."></textarea>
+
+                </div>
+
+
+                <!-- BUTTONS -->
+
+                <div class="contact-form-actions">
+
+
+                    <button
+                        type="button"
+                        id="loadUserDetails"
+                        class="load-details-btn">
+
+                        ↻ Load My Details
+
+                    </button>
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary">
+
+                        Send Message
+
+                    </button>
+
+                </div>
+
+
+            </form>
+
+        </div>
+
+
+        <!-- ==========================
+            CONTACT INFORMATION
+        =========================== -->
+
+        <div class="contact-info">
+
+
+            <!-- LOCATION -->
+
+            <div class="info-card">
+
+                <div class="info-icon">
+
+                    <i class="fas fa-location-dot"></i>
+
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Visit Us
+                    </h3>
+
+                    <p>
+                        Sage & Soil HQ
+                    </p>
+
+                    <p>
+                        Kollam, Kerala
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- PHONE -->
+
+            <div class="info-card">
+
+                <div class="info-icon">
+
+                    <i class="fas fa-phone"></i>
+
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Call
+                    </h3>
+
+                    <p>
+                        +91 98765 43210
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- EMAIL -->
+
+            <div class="info-card">
+
+                <div class="info-icon">
+
+                    <i class="fas fa-envelope"></i>
+
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Email
+                    </h3>
+
+                    <p>
+                        hello@sageandsoil.in
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- MAP -->
+
+            <div class="map-container">
+
+                <iframe
+                    src="https://www.google.com/maps?q=Kollam,Kerala&output=embed"
+                    loading="lazy"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================
+                FOLLOW US
+====================================== -->
+
+<section class="social-section">
+
+    <div class="container">
+
+        <h2>
+            Follow Us
+        </h2>
+
+        <p>
+            Stay connected for fresh arrivals, seasonal recipes,
+            farm stories and community updates.
+        </p>
+
+
+        <div class="social-icons">
+
+            <a href="#">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-x-twitter"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-youtube"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================
+                    FAQ
+====================================== -->
+
+<section class="faq-section">
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <p class="section-tag">
+                FAQs
+            </p>
+
+            <h2>
+                Frequently Asked Questions
+            </h2>
+
+            <p class="section-description">
+                Everything you need to know about Sage & Soil.
+            </p>
+
+        </div>
+
+
+        <div class="faq-container">
+
+
+            <!-- FAQ 1 -->
+
+            <div class="faq-item active">
+
+                <button
+                    class="faq-question"
+                    type="button">
+
+                    <span>
+                        How do subscriptions work?
+                    </span>
+
+                    <span class="faq-icon">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="faq-answer">
+
+                    <p>
+                        Choose your preferred produce, select a delivery frequency
+                        (weekly, fortnightly or monthly), and we'll deliver fresh
+                        farm produce directly to your doorstep. You can pause,
+                        skip or edit your crate anytime.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- FAQ 2 -->
+
+            <div class="faq-item">
+
+                <button
+                    class="faq-question"
+                    type="button">
+
+                    <span>
+                        Which states do you currently deliver to?
+                    </span>
+
+                    <span class="faq-icon">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="faq-answer">
+
+                    <p>
+                        We currently deliver across selected cities in Kerala,
+                        Tamil Nadu, Karnataka, Maharashtra and are continuously
+                        expanding to new locations.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- FAQ 3 -->
+
+            <div class="faq-item">
+
+                <button
+                    class="faq-question"
+                    type="button">
+
+                    <span>
+                        Can I pause or skip a delivery?
+                    </span>
+
+                    <span class="faq-icon">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="faq-answer">
+
+                    <p>
+                        Yes! You can pause your subscription or skip a delivery
+                        anytime without paying any extra charges.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- FAQ 4 -->
+
+            <div class="faq-item">
+
+                <button
+                    class="faq-question"
+                    type="button">
+
+                    <span>
+                        Are all products organic?
+                    </span>
+
+                    <span class="faq-icon">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="faq-answer">
+
+                    <p>
+                        Products labelled Organic are certified organic.
+                        We also work with trusted local farms that follow
+                        sustainable and ethical farming practices.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- FAQ 5 -->
+
+            <div class="faq-item">
+
+                <button
+                    class="faq-question"
+                    type="button">
+
+                    <span>
+                        How fresh is the produce?
+                    </span>
+
+                    <span class="faq-icon">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="faq-answer">
+
+                    <p>
+                        Most fruits and vegetables are harvested within
+                        24–48 hours before delivery, ensuring maximum
+                        freshness and quality.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- FAQ 6 -->
+
+            <div class="faq-item">
+
+                <button
+                    class="faq-question"
+                    type="button">
+
+                    <span>
+                        How can I contact customer support?
+                    </span>
+
+                    <span class="faq-icon">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="faq-answer">
+
+                    <p>
+                        You can reach us through the contact form above,
+                        email us at hello@sageandsoil.in, or call us during
+                        business hours.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================
+                FOOTER
+====================================== -->
+
+<footer>
+
+    <div class="container footer-grid">
+
+
+        <!-- BRAND -->
+
+        <div class="footer-column">
+
+            <h2>
+                Sage & Soil
+            </h2>
+
+            <p>
+                Connecting farmers and families through
+                fresh, sustainable and locally sourced produce.
+            </p>
+
+        </div>
+
+
+        <!-- SHOP -->
+
+        <div class="footer-column">
+
+            <h3>
+                Shop
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a href="products.html">
+                        Shop Produce
+                    </a>
+                </li>
+
+                <li>
+                    <a href="crate.html">
+                        My Crate
+                    </a>
+                </li>
+
+                <li>
+                    <a href="subscription.html">
+                        Subscriptions
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- COMPANY -->
+
+        <div class="footer-column">
+
+            <h3>
+                Company
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a href="about.html">
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        FAQs
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- CONTACT -->
+
+        <div class="footer-column">
+
+            <h3>
+                Contact
+            </h3>
+
+            <p>
+                📍 Kollam, Kerala
+            </p>
+
+            <p>
+                📧 hello@sageandsoil.in
+            </p>
+
+            <p>
+                📞 +91 98765 43210
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Sage & Soil. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- =====================================
+        CONTACT SUCCESS POPUP
+====================================== -->
+
+<div class="contact-success-overlay" id="contactSuccessOverlay">
+
+    <div class="contact-success-modal">
+
+        <div class="contact-success-icon">
+            ✓
+        </div>
+
+        <p class="contact-success-tag">
+            MESSAGE SENT
+        </p>
+
+        <h2>
+            Thank You for Reaching Out
+        </h2>
+
+        <p>
+            Your message has been sent successfully.
+            Our team will review your enquiry and get back to you
+            via email as soon as possible.
+        </p>
+
+        <button
+            type="button"
+            class="contact-success-button"
+            id="contactSuccessClose">
+            Done
+        </button>
+
+    </div>
+
+</div>
+<!-- =====================================
+                JAVASCRIPT
+====================================== -->
+
+<script src="js/cart.js"></script>
+
+<script src="js/contact.js"></script>
+
+
+</body>
+
+</html>

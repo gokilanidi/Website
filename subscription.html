@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Subscription | Sage & Soil</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/global.css">
+
+    <link rel="stylesheet" href="css/subscription.css">
+
+</head>
+
+<body>
+
+<!-- =====================================
+                HEADER
+====================================== -->
+
+<!-- =====================================
+                HEADER
+====================================== -->
+
+<header>
+
+    <nav class="navbar container">
+
+        <!-- LOGO -->
+        <a href="index.html" class="logo">
+            <img
+                src="images/icons/logo.png"
+                alt="Sage & Soil Logo"
+            >
+
+            <h2>Sage & Soil</h2>
+        </a>
+
+
+        <!-- NAV LINKS -->
+        <ul class="nav-links" id="navLinks">
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="products.html">
+                    Shop Produce
+                </a>
+            </li>
+
+            <li>
+                <a href="crate.html">
+                    My Crate
+                </a>
+            </li>
+
+            <li>
+                <a class="active" href="subscription.html">
+                    Subscription
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html">
+                    About
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+
+        <!-- RIGHT SIDE -->
+        <div class="nav-actions">
+
+            <!-- HAMBURGER -->
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open navigation"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+
+            <!-- BASKET -->
+            <a
+                href="crate.html"
+                class="cart"
+                aria-label="My Crate"
+            >
+                🧺
+                <span id="cartCount">0</span>
+            </a>
+
+
+            <!-- PROFILE -->
+            <a
+                href="profile.html"
+                class="profile-link"
+                aria-label="My Profile"
+            >
+                <span class="profile-icon">🤵🏻</span>
+            </a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =====================================
+                HERO
+====================================== -->
+
+
+<!--==================================================
+            BUILD YOUR SUBSCRIPTION
+==================================================-->
+
+<section class="subscription-setup">
+
+    <div class="container">
+
+        <!-- PAGE INTRO -->
+
+        <div class="subscription-heading">
+
+            <p class="section-tag">
+                SUBSCRIBE & SAVE
+            </p>
+
+            <h1>
+                Build Your Subscription
+            </h1>
+
+            <p>
+                Your fresh crate, delivered on your schedule.
+                Save 10% on every subscription delivery.
+            </p>
+
+        </div>
+
+
+        <!--==================================================
+                    FREQUENCY
+        ==================================================-->
+
+        <div class="subscription-box">
+
+            <div class="box-heading">
+
+                <h2>
+                    Choose Your Delivery Frequency
+                </h2>
+
+                <p>
+                    Pick how often you'd like your crate delivered.
+                </p>
+
+            </div>
+
+
+            <div class="frequency-grid">
+
+
+                <!-- WEEKLY -->
+
+                <div
+                    class="frequency-card"
+                    data-frequency="weekly">
+
+                    <div class="frequency-icon">
+                        🥬
+                    </div>
+
+                    <h3>
+                        Weekly
+                    </h3>
+
+                    <p>
+                        Every 7 days
+                    </p>
+
+                </div>
+
+
+                <!-- FORTNIGHTLY -->
+
+                <div
+                    class="frequency-card active"
+                    data-frequency="fortnightly">
+
+                    <div class="selected">
+                        ✓
+                    </div>
+
+                    <div class="frequency-icon">
+                        🧺
+                    </div>
+
+                    <h3>
+                        Fortnightly
+                    </h3>
+
+                    <p>
+                        Every 14 days
+                    </p>
+
+                    <span class="recommended">
+                        Recommended
+                    </span>
+
+                </div>
+
+
+                <!-- MONTHLY -->
+
+                <div
+                    class="frequency-card"
+                    data-frequency="monthly">
+
+                    <div class="frequency-icon">
+                        🌱
+                    </div>
+
+                    <h3>
+                        Monthly
+                    </h3>
+
+                    <p>
+                        Every 30 days
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!--==================================================
+                    YOUR SUBSCRIPTION CRATE
+        ==================================================-->
+
+        <div class="subscription-crate-section">
+
+            <div class="box-heading">
+
+                <p class="section-tag">
+                    YOUR CRATE
+                </p>
+
+                <h2>
+                    Freshness, Delivered
+                </h2>
+
+                <p>
+                    These are the products that will be included
+                    in each subscription delivery.
+                </p>
+
+            </div>
+
+
+            <div class="subscription-crate-layout">
+
+
+                <!-- PRODUCTS -->
+
+                <div
+                    class="subscription-products"
+                    id="subscriptionCrateList">
+
+                    <!-- Products loaded by subscription.js -->
+
+                </div>
+
+
+                <!-- SUMMARY -->
+
+                <aside class="subscription-summary">
+
+                    <h3>
+                        Subscription Summary
+                    </h3>
+
+
+                    <div class="subscription-summary-row">
+
+                        <span>
+                            Total Items
+                        </span>
+
+                        <strong
+                            id="subscriptionTotalItems">
+                            0
+                        </strong>
+
+                    </div>
+
+
+                    <div class="subscription-summary-row">
+
+                        <span>
+                            Total Weight
+                        </span>
+
+                        <strong
+                            id="subscriptionTotalWeight">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="subscription-summary-row">
+
+                        <span>
+                            Regular Price
+                        </span>
+
+                        <strong
+                            id="subscriptionRegularPrice">
+                            ₹0
+                        </strong>
+
+                    </div>
+
+
+                    <div class="subscription-summary-row discount-row">
+
+                        <span>
+                            Subscription Discount
+                        </span>
+
+                        <strong>
+                            10% OFF
+                        </strong>
+
+                    </div>
+
+
+                    <hr>
+
+
+                    <div class="subscription-summary-row final-price">
+
+                        <span>
+                            You Pay
+                        </span>
+
+                        <strong
+                            id="subscriptionTotalPrice">
+                            ₹0
+                        </strong>
+
+                    </div>
+
+
+                    <div class="subscription-saving">
+
+                        🌿 You save 10% on every delivery
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="btn btn-primary subscription-confirm"
+                        id="confirmSubscription">
+
+                        Start My Subscription 🌱
+
+                    </button>
+
+
+                    <a
+                        href="crate.html"
+                        class="edit-crate-link">
+
+                        ← Edit My Crate
+
+                    </a>
+
+                </aside>
+
+            </div>
+
+        </div>
+
+
+        <!--==================================================
+                    BENEFITS
+        ==================================================-->
+
+        <div class="subscription-benefits">
+
+            <div class="benefit-card">
+
+                <div class="benefit-icon">
+                    💰
+                </div>
+
+                <h3>
+                    Save 10%
+                </h3>
+
+                <p>
+                    Get 10% off every subscription delivery.
+                </p>
+
+            </div>
+
+
+            <div class="benefit-card">
+
+                <div class="benefit-icon">
+                    🚚
+                </div>
+
+                <h3>
+                    Free Delivery
+                </h3>
+
+                <p>
+                    Every subscription crate comes with free delivery.
+                </p>
+
+            </div>
+
+
+            <div class="benefit-card">
+
+                <div class="benefit-icon">
+                    ⏸️
+                </div>
+
+                <h3>
+                    Pause Anytime
+                </h3>
+
+                <p>
+                    Take a break whenever you need without losing your plan.
+                </p>
+
+            </div>
+
+
+            <div class="benefit-card">
+
+                <div class="benefit-icon">
+                    ❌
+                </div>
+
+                <h3>
+                    No Commitment
+                </h3>
+
+                <p>
+                    Cancel anytime. No long-term commitment.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================
+            NEWSLETTER
+====================================== -->
+
+<section class="newsletter">
+
+    <div class="container">
+
+        <div class="newsletter-content">
+
+            <p class="section-tag">
+                STAY CONNECTED
+            </p>
+
+            <h2>
+                Freshness Delivered to Your Inbox
+            </h2>
+
+            <p>
+                Get seasonal harvest updates, fresh recipes,
+                subscription news and exclusive offers from
+                Sage & Soil.
+            </p>
+
+            <form class="newsletter-form" id="newsletterForm">
+
+                <input
+                    type="email"
+                    id="newsletterEmail"
+                    placeholder="Enter your email address"
+                    aria-label="Email address"
+                    required
+                >
+
+                <button type="submit">
+                    Subscribe
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================
+                FOOTER
+====================================== -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <!-- ABOUT -->
+            <div class="footer-column footer-about">
+
+                <h2>
+                    Sage & Soil
+                </h2>
+
+                <p>
+                    Bringing farm-fresh, organic produce
+                    directly from trusted Indian farmers
+                    to your doorstep.
+                </p>
+
+                <div class="social-icons">
+
+                    <a href="#" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="#" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="#" aria-label="X">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- EXPLORE -->
+            <div class="footer-column">
+
+                <h3>
+                    Explore
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="products.html">
+                            Products
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="subscription.html">
+                            Subscription
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="crate.html">
+                            My Crate
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About Us
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- SUPPORT -->
+            <div class="footer-column">
+
+                <h3>
+                    Support
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html#faq">
+                            FAQs
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Privacy Policy
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Terms & Conditions
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- CONTACT -->
+            <div class="footer-column">
+
+                <h3>
+                    Contact
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <span>📍</span>
+                        <span>Kollam, Kerala</span>
+                    </li>
+
+                    <li>
+                        <span>📞</span>
+                        <span>+91 98765 43210</span>
+                    </li>
+
+                    <li>
+                        <span>✉</span>
+                        <span>hello@sageandsoil.in</span>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Sage & Soil.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="js/cart.js"></script>
+<script src="js/subscription.js"></script>
+<script src="js/newsletter.js"></script>
+
+
+</body>
+</html>

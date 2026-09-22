@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account | Sage & Soil</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="css/global.css">
+
+    <link rel="stylesheet"
+          href="css/auth.css">
+
+</head>
+
+
+<body class="auth-page">
+
+
+
+
+<main class="auth-main">
+
+    <div class="auth-card">
+
+
+        <div class="auth-heading">
+
+            <div class="auth-icon">
+                <img src="images/icons/logo.png" alt="Sage & Soil Logo">
+            </div>
+
+            <p class="section-tag">
+                JOIN SAGE & SOIL
+            </p>
+
+            <h1>
+                Create Your Account
+            </h1>
+
+            <p>
+                Start building your farm-fresh crate.
+            </p>
+
+        </div>
+
+
+        <form id="signupForm">
+
+
+            <div class="name-row">
+
+                <div class="form-group">
+
+                    <label for="firstName">
+                        First Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="firstName"
+                        placeholder="First name"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="lastName">
+                        Last Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="lastName"
+                        placeholder="Last name">
+
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="signupEmail">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="signupEmail"
+                    placeholder="you@example.com"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="signupPhone">
+                    Phone Number
+                </label>
+
+                <input
+                    type="tel"
+                    id="signupPhone"
+                    placeholder="9876543210"
+                    maxlength="10"
+                    inputmode="numeric"
+                    required>
+
+            </div>
+            
+            
+            <div class="name-row">
+
+                <div class="form-group">
+                    <label for="signupCity">
+                        City
+                    </label>
+
+                    <input
+                        type="text"
+                        id="signupCity"
+                        placeholder="Your city"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="signupPin">
+                        PIN Code
+                    </label>
+
+                    <input
+                        type="text"
+                        id="signupPin"
+                        placeholder="6-digit PIN"
+                        maxlength="6"
+                        inputmode="numeric"
+                        required>
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="signupPassword">
+                    Password
+                </label>
+
+                <div class="password-field">
+
+                    <input
+                        type="password"
+                        id="signupPassword"
+                        placeholder="Create a password"
+                        required>
+
+                    <button
+                        type="button"
+                        class="password-toggle"
+                        data-target="signupPassword">
+
+                        👁
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="confirmPassword">
+                    Confirm Password
+                </label>
+
+                <div class="password-field">
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        placeholder="Repeat your password"
+                        required>
+
+                    <button
+                        type="button"
+                        class="password-toggle"
+                        data-target="confirmPassword">
+
+                        👁
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <label class="terms-check">
+
+                <input
+                    type="checkbox"
+                    id="terms"
+                    required>
+
+                <span>
+
+                    I agree to the
+                    <a href="#">
+                        Terms & Conditions
+                    </a>
+                    and
+                    <a href="#">
+                        Privacy Policy
+                    </a>.
+
+                </span>
+
+            </label>
+
+
+            <p
+                id="signupError"
+                class="form-error">
+            </p>
+
+
+            <button
+                type="submit"
+                class="auth-submit">
+
+                Create Account
+
+            </button>
+
+
+        </form>
+
+
+        <div class="auth-divider">
+
+            <span>
+                Already have an account?
+            </span>
+
+        </div>
+
+
+        <a href="login.html"
+           class="create-account-btn">
+
+            Login Instead
+
+        </a>
+
+
+    </div>
+
+</main>
+
+
+<footer class="auth-footer">
+
+    <p>
+        © 2026 Sage & Soil. All Rights Reserved.
+    </p>
+
+</footer>
+
+<!-- ==========================================
+        ACCOUNT SUCCESS POPUP
+========================================== -->
+
+<div class="success-overlay" id="successOverlay">
+
+    <div class="success-confetti" id="successConfetti"></div>
+
+    <div class="success-modal">
+
+        <div class="success-gold">✦</div>
+
+        <div class="success-logo">
+            <img
+                src="images/icons/logo.png"
+                alt="Sage & Soil">
+        </div>
+
+        <p class="success-tag">
+            WELCOME TO SAGE & SOIL
+        </p>
+
+        <h2>Account Created!</h2>
+
+        <p class="success-message">
+            Your account has been created successfully.
+            Your farm-fresh journey starts here. 🌱
+        </p>
+
+        <div class="success-decoration">
+            <span>✦</span>
+            <span>✧</span>
+            <span>✦</span>
+        </div>
+
+        <button
+            type="button"
+            class="success-button"
+            id="successContinue">
+            Continue
+        </button>
+
+    </div>
+
+</div>
+
+<script src="js/auth.js"></script>
+
+</body>
+
+</html>

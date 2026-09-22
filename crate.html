@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Crate | Sage & Soil</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/global.css">
+
+    <link rel="stylesheet" href="css/crate.css">
+
+</head>
+
+<body>
+
+<!--====================================
+                HEADER
+=====================================-->
+
+<header>
+
+    <nav class="navbar container">
+
+        <div class="logo">
+
+            <img src="images/icons/logo.png"
+                 alt="Sage & Soil Logo">
+
+            <h2>
+
+                Sage & Soil
+
+            </h2>
+
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Shop Produce</a></li>
+            <li><a class="active" href="crate.html">My Crate</a></li>
+            <li><a href="subscription.html">Subscription</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+       
+        <!-- RIGHT SIDE: MENU + BASKET + USER -->
+        <div class="nav-actions">
+
+            <!-- HAMBURGER -->
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open navigation"
+                aria-expanded="false">
+                ☰
+            </button>
+
+
+            <!-- BASKET -->
+            <a href="crate.html" class="cart">
+                        🧺
+                <span id="cartCount">0</span>
+            </a>
+
+            <!-- USER -->
+            <a href="profile.html"
+            class="profile-link"
+            aria-label="My Profile">
+                <span class="profile-icon">🤵🏻</span>
+            </a>
+
+        </div>
+
+    </nav>
+</header>
+
+<!--====================================
+                HERO
+====================================-->
+
+<section class="crate-hero">
+
+    <div class="container">
+
+        <p class="section-tag">
+            YOUR SELECTION
+        </p>
+
+        <h1>
+            My Crate
+        </h1>
+
+        <p class="crate-count">
+            0 items in your crate
+        </p>
+
+    </div>
+
+</section>
+
+
+<!--====================================
+                CART
+====================================-->
+
+<section class="cart-section">
+
+    <div class="container cart-layout">
+
+        <!--=========================
+                CART ITEMS
+        ==========================-->
+
+        <div class="cart-items">
+
+            <button class="clear-cart" type="button">
+                🗑 Clear all items
+            </button>
+
+        </div>
+
+
+        <!--=========================
+            CART SUMMARY
+        ==========================-->
+
+        <aside class="cart-summary">
+
+            <h2>
+                Crate Summary
+            </h2>
+
+            <div class="summary-row">
+                <span>Subtotal</span>
+                <strong>₹0</strong>
+            </div>
+
+            <div class="summary-row">
+                <span>Delivery</span>
+                <strong>Free</strong>
+            </div>
+
+            <div class="summary-row">
+                <span>Packaging</span>
+                <strong>Eco-Friendly</strong>
+            </div>
+
+            <hr>
+
+            <div class="summary-row total">
+                <span>Total</span>
+                <strong>₹0</strong>
+            </div>
+
+            <div class="delivery-box">
+                <p>
+                    Estimated delivery
+                </p>
+
+                <h4 id="estimatedDelivery">
+                    Calculating...
+                </h4>
+            </div>
+
+            <button
+                type="button"
+                class="btn btn-primary checkout-btn"
+                id="openCheckout">
+                Proceed to Checkout
+            </button>
+
+            <div class="divider">
+                <span>or</span>
+            </div>
+
+            <a
+                href="subscription.html"
+                class="subscribe-btn">
+                🔄 Subscribe & Save 10%
+            </a>
+
+            <p class="subscribe-text">
+                Convert your crate into a recurring subscription and save on every delivery.
+            </p>
+
+            <div class="summary-features">
+                <span>🌿 Organic</span>
+                <span>🚚 Free Delivery</span>
+                <span>✔ No Commitment</span>
+            </div>
+
+        </aside>
+
+    </div>
+
+</section>
+
+
+
+<!--====================================
+         YOU MIGHT ALSO LIKE
+====================================-->
+
+<section class="recommendations">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <p class="section-tag">
+                    COMPLETE YOUR ORDER
+                </p>
+
+                <h2>
+                    You Might Also Like
+                </h2>
+
+            </div>
+
+            <a href="products.html" class="view-all">
+                View All →
+            </a>
+
+        </div>
+
+
+        <div class="recommendation-scroll">
+
+
+            <!-- BRINJAL -->
+
+            <div class="recommendation-card"
+                 data-id="purple-brinjal"
+                 data-name="Purple Brinjal"
+                 data-price="48"
+                 data-unit="kg"
+                 data-image="images/products/brinjal.png">
+
+                <img src="images/products/brinjal.png"
+                     alt="Purple Brinjal">
+
+                <span class="badge">
+                    Organic
+                </span>
+
+                <h3>Purple Brinjal</h3>
+
+                <p class="price">
+                    ₹48 <span>/ kg</span>
+                </p>
+
+                <button class="btn btn-primary recommendation-add"
+                        type="button">
+                    Add to Crate
+                </button>
+
+            </div>
+
+
+            <!-- OKRA -->
+
+            <div class="recommendation-card"
+                 data-id="fresh-okra"
+                 data-name="Fresh Okra"
+                 data-price="52"
+                 data-unit="500 g"
+                 data-image="images/products/okra.png">
+
+                <img src="images/products/okra.png"
+                     alt="Fresh Okra">
+
+                <span class="badge">
+                    Organic
+                </span>
+
+                <h3>Fresh Okra</h3>
+
+                <p class="price">
+                    ₹52 <span>/ 500 g</span>
+                </p>
+
+                <button class="btn btn-primary recommendation-add"
+                        type="button">
+                    Add to Crate
+                </button>
+
+            </div>
+
+
+            <!-- CABBAGE -->
+
+            <div class="recommendation-card"
+                 data-id="green-cabbage"
+                 data-name="Green Cabbage"
+                 data-price="42"
+                 data-unit="piece"
+                 data-image="images/products/cabbage.png">
+
+                <img src="images/products/cabbage.png"
+                     alt="Green Cabbage">
+
+                <span class="badge">
+                    Organic
+                </span>
+
+                <h3>Green Cabbage</h3>
+
+                <p class="price">
+                    ₹42 <span>/ piece</span>
+                </p>
+
+                <button class="btn btn-primary recommendation-add"
+                        type="button">
+                    Add to Crate
+                </button>
+
+            </div>
+
+
+            <!-- CAPSICUM -->
+
+            <div class="recommendation-card"
+                 data-id="green-capsicum"
+                 data-name="Green Capsicum"
+                 data-price="68"
+                 data-unit="500 g"
+                 data-image="images/products/capsicum.png">
+
+                <img src="images/products/capsicum.png"
+                     alt="Green Capsicum">
+
+                <span class="badge">
+                    Organic
+                </span>
+
+                <h3>Green Capsicum</h3>
+
+                <p class="price">
+                    ₹68 <span>/ 500 g</span>
+                </p>
+
+                <button class="btn btn-primary recommendation-add"
+                        type="button">
+                    Add to Crate
+                </button>
+
+            </div>
+
+
+            <!-- CAULIFLOWER -->
+
+            <div class="recommendation-card"
+                 data-id="fresh-cauliflower"
+                 data-name="Fresh Cauliflower"
+                 data-price="58"
+                 data-unit="piece"
+                 data-image="images/products/cauliflower.png">
+
+                <img src="images/products/cauliflower.png"
+                     alt="Fresh Cauliflower">
+
+                <span class="badge">
+                    Organic
+                </span>
+
+                <h3>Fresh Cauliflower</h3>
+
+                <p class="price">
+                    ₹58 <span>/ piece</span>
+                </p>
+
+                <button class="btn btn-primary recommendation-add"
+                        type="button">
+                    Add to Crate
+                </button>
+
+            </div>
+
+
+            <!-- APPLES -->
+
+            <div class="recommendation-card"
+                 data-id="fresh-apples"
+                 data-name="Fresh Apples"
+                 data-price="180"
+                 data-unit="kg"
+                 data-image="images/products/apple.png">
+
+                <img src="images/products/apple.png"
+                     alt="Fresh Apples">
+
+                <span class="badge">
+                    Organic
+                </span>
+
+                <h3>Fresh Apples</h3>
+
+                <p class="price">
+                    ₹180 <span>/ kg</span>
+                </p>
+
+                <button class="btn btn-primary recommendation-add"
+                        type="button">
+                    Add to Crate
+                </button>
+
+            </div>
+
+
+            <!-- BANANAS -->
+
+            <div class="recommendation-card"
+                 data-id="bananas"
+                 data-name="Bananas"
+                 data-price="65"
+                 data-unit="dozen"
+                 data-image="images/products/banana.png">
+
+                <img src="images/products/banana.png"
+                     alt="Bananas">
+
+                <span class="badge">
+                    Organic
+                </span>
+
+                <h3>Bananas</h3>
+
+                <p class="price">
+                    ₹65 <span>/ dozen</span>
+                </p>
+
+                <button class="btn btn-primary recommendation-add"
+                        type="button">
+                    Add to Crate
+                </button>
+
+            </div>
+
+
+            <!-- GRAPES -->
+
+            <div class="recommendation-card"
+                 data-id="green-grapes"
+                 data-name="Green Grapes"
+                 data-price="120"
+                 data-unit="500 g"
+                 data-image="images/products/grapes.png">
+
+                <img src="images/products/grapes.png"
+                     alt="Green Grapes">
+
+                <span class="badge">
+                    Organic
+                </span>
+
+                <h3>Green Grapes</h3>
+
+                <p class="price">
+                    ₹120 <span>/ 500 g</span>
+                </p>
+
+                <button class="btn btn-primary recommendation-add"
+                        type="button">
+                    Add to Crate
+                </button>
+
+            </div>
+
+
+            <!-- GUAVA -->
+
+            <div class="recommendation-card"
+                 data-id="fresh-guava"
+                 data-name="Fresh Guava"
+                 data-price="75"
+                 data-unit="kg"
+                 data-image="images/products/guava.png">
+
+                <img src="images/products/guava.png"
+                     alt="Fresh Guava">
+
+                <span class="badge">
+                    Organic
+                </span>
+
+                <h3>Fresh Guava</h3>
+
+                <p class="price">
+                    ₹75 <span>/ kg</span>
+                </p>
+
+                <button class="btn btn-primary recommendation-add"
+                        type="button">
+                    Add to Crate
+                </button>
+
+            </div>
+
+
+            <!-- CHANA DAL -->
+
+            <div class="recommendation-card"
+                 data-id="chana-dal"
+                 data-name="Chana Dal"
+                 data-price="110"
+                 data-unit="kg"
+                 data-image="images/products/chana-dal.png">
+
+                <img src="images/products/chana-dal.png"
+                     alt="Chana Dal">
+
+                <span class="badge">
+                    Organic
+                </span>
+
+                <h3>Chana Dal</h3>
+
+                <p class="price">
+                    ₹110 <span>/ kg</span>
+                </p>
+
+                <button class="btn btn-primary recommendation-add"
+                        type="button">
+                    Add to Crate
+                </button>
+
+            </div>
+
+
+            <!-- MASOOR DAL -->
+
+            <div class="recommendation-card"
+                 data-id="masoor-dal"
+                 data-name="Masoor Dal"
+                 data-price="125"
+                 data-unit="kg"
+                 data-image="images/products/masoor-dal.png">
+
+                <img src="images/products/masoor-dal.png"
+                     alt="Masoor Dal">
+
+                <span class="badge">
+                    Organic
+                </span>
+
+                <h3>Masoor Dal</h3>
+
+                <p class="price">
+                    ₹125 <span>/ kg</span>
+                </p>
+
+                <button class="btn btn-primary recommendation-add"
+                        type="button">
+                    Add to Crate
+                </button>
+
+            </div>
+
+
+            <!-- TURMERIC -->
+
+            <div class="recommendation-card"
+                 data-id="turmeric-powder"
+                 data-name="Turmeric Powder"
+                 data-price="85"
+                 data-unit="200 g"
+                 data-image="images/products/turmeric.png">
+
+                <img src="images/products/turmeric.png"
+                     alt="Turmeric Powder">
+
+                <span class="badge">
+                    Organic
+                </span>
+
+                <h3>Turmeric Powder</h3>
+
+                <p class="price">
+                    ₹85 <span>/ 200 g</span>
+                </p>
+
+                <button class="btn btn-primary recommendation-add"
+                        type="button">
+                    Add to Crate
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--====================================
+                FOOTER
+====================================-->
+
+<footer>
+
+    <div class="container footer-grid">
+
+        <div class="footer-column">
+
+            <h2>
+                Sage & Soil
+            </h2>
+
+            <p>
+                Connecting farmers and families through fresh,
+                sustainable and locally sourced produce.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Shop
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a href="products.html">
+                        Shop Produce
+                    </a>
+                </li>
+
+                <li>
+                    <a href="crate.html">
+                        My Crate
+                    </a>
+                </li>
+
+                <li>
+                    <a href="subscription.html">
+                        Subscriptions
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Company
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a href="about.html">
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html#faq">
+                        FAQs
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Contact
+            </h3>
+
+            <p>
+                📍 Kollam, Kerala
+            </p>
+
+            <p>
+                ✉️ hello@sageandsoil.in
+            </p>
+
+            <p>
+                📞 +91 98765 43210
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        © 2026 Sage & Soil. All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================
+            CHECKOUT OVERLAY
+===================================== -->
+
+<div class="checkout-overlay" id="checkoutOverlay">
+
+    <div class="checkout-page">
+
+        <!-- CLOSE BUTTON -->
+        <button
+            type="button"
+            class="checkout-close"
+            id="closeCheckout"
+            aria-label="Close checkout">
+            ×
+        </button>
+
+
+        <!-- HEADER -->
+        <div class="checkout-header">
+
+            <p class="section-tag">
+                CHECKOUT
+            </p>
+
+            <h2>
+                Complete Your Order
+            </h2>
+
+            <p>
+                Fresh from our farms to your doorstep.
+            </p>
+
+        </div>
+
+
+        <!-- CHECKOUT BODY -->
+        <div class="checkout-body">
+
+
+            <!-- =========================
+                 DELIVERY DETAILS
+            ========================== -->
+
+            <div class="checkout-form-section">
+
+                <h3>
+                    Delivery Details
+                </h3>
+
+
+                <div class="form-group">
+
+                    <label for="checkoutName">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="checkoutName"
+                        placeholder="Enter your full name"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="checkoutPhone">
+                        Phone Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="checkoutPhone"
+                        placeholder="Enter your phone number"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="checkoutAddress">
+                        Delivery Address
+                    </label>
+
+                    <textarea
+                        id="checkoutAddress"
+                        rows="3"
+                        placeholder="Enter your complete address"
+                    ></textarea>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="checkoutCity">
+                            City
+                        </label>
+
+                        <input
+                            type="text"
+                            id="checkoutCity"
+                            placeholder="City"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="checkoutPin">
+                            PIN Code
+                        </label>
+
+                        <input
+                            type="text"
+                            id="checkoutPin"
+                            placeholder="PIN Code"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- PAYMENT -->
+
+                <h3 class="payment-title">
+                    Payment Method
+                </h3>
+
+
+                <label class="payment-option">
+
+                    <input
+                        type="radio"
+                        name="paymentMethod"
+                        value="upi"
+                        checked
+                    >
+
+                    <span>
+                        UPI
+                    </span>
+
+                </label>
+
+
+                <label class="payment-option">
+
+                    <input
+                        type="radio"
+                        name="paymentMethod"
+                        value="card"
+                    >
+
+                    <span>
+                        Credit / Debit Card
+                    </span>
+
+                </label>
+
+
+                <label class="payment-option">
+
+                    <input
+                        type="radio"
+                        name="paymentMethod"
+                        value="cod"
+                    >
+
+                    <span>
+                        Cash on Delivery
+                    </span>
+
+                </label>
+
+
+                <div id="upiOptions" class="payment-detail-panel">
+
+                    <p class="payment-detail-label">
+                        Choose your UPI app
+                    </p>
+
+                    <div class="payment-suboptions">
+
+                        <label class="payment-suboption"><input type="radio" name="upiApp" value="PhonePe" checked><span>PhonePe</span></label>
+                        <label class="payment-suboption"><input type="radio" name="upiApp" value="Google Pay"><span>Google Pay</span></label>
+                        <label class="payment-suboption"><input type="radio" name="upiApp" value="Navi"><span>Navi</span></label>
+                        <label class="payment-suboption"><input type="radio" name="upiApp" value="Amazon Pay"><span>Amazon Pay</span></label>
+                        <label class="payment-suboption"><input type="radio" name="upiApp" value="Others"><span>Others</span></label>
+
+                    </div>
+
+                </div>
+
+
+                <div id="cardOptions" class="payment-detail-panel" style="display: none;">
+
+                    <p class="payment-detail-label">
+                        Select your card issuer
+                    </p>
+
+                    <div class="payment-suboptions">
+
+                        <label class="payment-suboption"><input type="radio" name="cardIssuer" value="SBI" checked><span>SBI</span></label>
+                        <label class="payment-suboption"><input type="radio" name="cardIssuer" value="HDFC"><span>HDFC</span></label>
+                        <label class="payment-suboption"><input type="radio" name="cardIssuer" value="ICICI"><span>ICICI</span></label>
+                        <label class="payment-suboption"><input type="radio" name="cardIssuer" value="Axis"><span>Axis</span></label>
+                        <label class="payment-suboption"><input type="radio" name="cardIssuer" value="Kotak"><span>Kotak</span></label>
+                        <label class="payment-suboption"><input type="radio" name="cardIssuer" value="Yes Bank"><span>Yes Bank</span></label>
+                        <label class="payment-suboption"><input type="radio" name="cardIssuer" value="Bank of Baroda"><span>Bank of Baroda</span></label>
+                        <label class="payment-suboption"><input type="radio" name="cardIssuer" value="Canara"><span>Canara</span></label>
+                        <label class="payment-suboption"><input type="radio" name="cardIssuer" value="Union Bank"><span>Union Bank</span></label>
+                        <label class="payment-suboption"><input type="radio" name="cardIssuer" value="IndusInd"><span>IndusInd</span></label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================
+                 ORDER SUMMARY
+            ========================== -->
+
+            <div class="checkout-order-section">
+
+                <h3>
+                    Order Summary
+                </h3>
+
+
+                <div
+                    class="checkout-items"
+                    id="checkoutItems">
+                </div>
+
+
+                <div class="checkout-total-row">
+
+                    <span>
+                        Subtotal
+                    </span>
+
+                    <strong id="checkoutSubtotal">
+                        ₹0
+                    </strong>
+
+                </div>
+
+
+                <div class="checkout-total-row">
+
+                    <span>
+                        Delivery
+                    </span>
+
+                    <strong>
+                        FREE
+                    </strong>
+
+                </div>
+
+
+                <div class="checkout-total-row final-total">
+
+                    <span>
+                        Total
+                    </span>
+
+                    <strong id="checkoutTotal">
+                        ₹0
+                    </strong>
+
+                </div>
+
+
+                <div class="checkout-delivery">
+
+                    <span>
+                        🚚
+                    </span>
+
+                    <div>
+
+                        <small>
+                            Estimated delivery
+                        </small>
+
+                        <strong id="checkoutDeliveryDate">
+                            Calculating...
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="place-order-btn"
+                    id="placeOrder">
+                    Place Order
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/cart.js"></script>
+<script src="js/crate.js"></script>
+
+</body>
+</html>

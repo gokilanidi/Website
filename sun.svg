@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="240"
+     height="240"
+     viewBox="0 0 240 240">
+
+<defs>
+
+<radialGradient id="sunGlow">
+
+<stop offset="0%" stop-color="#FFD867"/>
+
+<stop offset="100%" stop-color="#F9B233"/>
+
+</radialGradient>
+
+</defs>
+
+<!-- Glow -->
+
+<circle
+
+cx="120"
+
+cy="120"
+
+r="72"
+
+fill="#FFD867"
+
+opacity=".18"/>
+
+<circle
+
+cx="120"
+
+cy="120"
+
+r="56"
+
+fill="#FFD867"
+
+opacity=".35"/>
+
+<!-- Main Sun -->
+
+<circle
+
+cx="120"
+
+cy="120"
+
+r="45"
+
+fill="url(#sunGlow)"/>
+
+</svg>
